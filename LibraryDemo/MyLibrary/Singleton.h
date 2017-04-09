@@ -7,6 +7,7 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
+#include "SearchMemoryLeak.h"
 #include <memory>
 
 template<class Type>
@@ -14,18 +15,37 @@ class Singleton
 {
 public:
 
+	static void Create()
+	{
+		if (m_pSingleton == NULL)
+		{
+			m_pSingleton = New Type;
+		}
+	}
+
 	static Type& Instace()
 	{
-		static Type type;
 		return type;
 	}
 
-protected:
-	Singleton();
+	static void Delete()
+	{
+		if (m_pSingleton != NULL)
+		{
+			delete m_pSingleton;
+			m_pSingleton = NULL;
+		}
+	}
 
 private:
-	Singleton(const shingleton&) = delete;
-	Singleton& operator = (const singleton&) = delete;
+	static Type* m_pSingleton;
+
+	Singleton();
+	~Singleton();
+
+private:
+	Singleton(const Singleton&) = delete;
+	Singleton& operator = (const Singleton&) = delete;
 };
 
 #endif // !SINGLETON_H
