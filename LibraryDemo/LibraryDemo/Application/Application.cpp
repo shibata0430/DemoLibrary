@@ -5,20 +5,38 @@
  */
 
 #include "Application.h"
+#include "../Scene/SceneTransition.h"
+#include <Library.h>
+#include <assert.h>
 
 Application::Application() : 
+m_rLibrary(Library::Instace()),
+m_pSceneTransition(New SceneTransition),
 m_isGameEnd(false)
 {
-
+	if(m_pSceneTransition == NULL)
+	{
+		assert(m_pSceneTransition);
+	}
 }
 
 Application::~Application()
 {
-
+	delete m_pSceneTransition;
 }
 
 bool Application::Run()
 {
+	m_rLibrary.UpdateDI();
+
+	m_isGameEnd = m_pSceneTransition->Control();
+
+	m_rLibrary.SetFVF();
+	m_rLibrary.DrawStart();
+
+	m_pSceneTransition->Render();
+
+	m_rLibrary.DrawEnd();
 
 	return m_isGameEnd;
 }

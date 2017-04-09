@@ -3,10 +3,10 @@
 
 namespace
 {
-	const int	clientWidth = 1280;
-	const int	clientHeight = 720;
-	const char*	title = "LibTest";
-	const int	gameFPS = 60;
+	const int	clientWidth		= 1280;
+	const int	clientHeight	= 720;
+	const char*	title			= "LibTest";
+	const int	gameFPS			= 60;
 }
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
@@ -20,11 +20,11 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 
 	pApplication = New Application;
 	DWORD currentTime;
-	DWORD oldTime = gameFPS*timeGetTime();
+	DWORD oldTime = gameFPS * timeGetTime();
 
 	while (!pLibrary->Update())
 	{
-		currentTime = gameFPS*timeGetTime();
+		currentTime = gameFPS * timeGetTime();
 		if (currentTime - oldTime >= 1000)
 		{
 			if (pApplication->Run())

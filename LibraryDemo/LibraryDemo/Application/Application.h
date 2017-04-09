@@ -7,6 +7,9 @@
 #ifndef APPLICATION_H
 #define APPLICATION_H
 
+class Library;
+class SceneTransition;
+
 class Application
 {
 public:
@@ -16,7 +19,9 @@ public:
 	bool Run();
 
 private:
-	bool m_isGameEnd;
+	Library&			m_rLibrary;
+	SceneTransition*	m_pSceneTransition;
+	bool				m_isGameEnd;			// ƒQ[ƒ€ã‚Å‘€ì‚ªI—¹‚µ‚½‚©
 };
 
 #endif // !APPLICATION_H
