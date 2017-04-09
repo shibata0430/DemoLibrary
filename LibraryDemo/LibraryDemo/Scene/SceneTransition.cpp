@@ -5,3 +5,24 @@
  */
 
 #include "SceneTransition.h"
+
+SceneTransition::SceneTransition() :
+m_isControlEnd(false)
+{
+
+}
+
+SceneTransition::~SceneTransition()
+{
+
+}
+
+bool SceneTransition::Control()
+{
+	return m_isControlEnd;
+}
+
+void SceneTransition::Render()
+{
+
+}
