@@ -16,6 +16,18 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
     </Filter>
+    <Filter Include="Main\Application\Scene\LogoScene">
+      <UniqueIdentifier>{57047c38-65d7-44d4-a854-36496b064fea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Application\Scene\TitleScene">
+      <UniqueIdentifier>{40097c21-e0aa-4f14-9ef6-e867efa63ca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Application\Scene\MainScene">
+      <UniqueIdentifier>{acd9f149-e1d0-42a4-8fb0-b55f154b1a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Application\Scene\Button">
+      <UniqueIdentifier>{dc07c6ac-85d7-468e-9665-f4c93e1fad25}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -27,6 +39,15 @@
     <ClCompile Include="Application\Application.cpp">
       <Filter>Main\Application</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\SceneFactory.cpp">
+      <Filter>Main\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\Scene.cpp">
+      <Filter>Main\Application\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleScene.cpp">
+      <Filter>Main\Application\Scene\TitleScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -34,6 +55,15 @@
     </ClInclude>
     <ClInclude Include="Application\Application.h">
       <Filter>Main\Application</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\SceneFactory.h">
+      <Filter>Main\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Scene.h">
+      <Filter>Main\Application\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleScene.h">
+      <Filter>Main\Application\Scene\TitleScene</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

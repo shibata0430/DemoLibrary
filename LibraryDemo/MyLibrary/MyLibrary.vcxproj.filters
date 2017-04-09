@@ -67,7 +67,7 @@
     <Filter Include="Library\LightSetting\Light">
       <UniqueIdentifier>{d80fd5d6-f444-4fe1-a6d8-60f243361d0c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Library\Singleton">
+    <Filter Include="Singleton">
       <UniqueIdentifier>{73d47f76-1e95-4338-b712-c382a083e357}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -136,7 +136,7 @@
       <Filter>Library\LightSetting</Filter>
     </ClCompile>
     <ClCompile Include="Singleton.cpp">
-      <Filter>Library\Singleton</Filter>
+      <Filter>Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -207,7 +207,7 @@
       <Filter>Library\LightSetting</Filter>
     </ClInclude>
     <ClInclude Include="Singleton.h">
-      <Filter>Library\Singleton</Filter>
+      <Filter>Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
