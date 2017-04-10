@@ -5,6 +5,7 @@
 */
 
 #include "SoundInterface.h"
+#include "Define.h"
 
 SoundInterface::SoundInterface() :
 m_pDsound8(NULL)
@@ -14,11 +15,7 @@ m_pDsound8(NULL)
 
 SoundInterface::~SoundInterface()
 {
-	if (m_pDsound8 != NULL)
-	{
-		m_pDsound8->Release();
-		m_pDsound8 = NULL;
-	}
+	SafeRelease(m_pDsound8);
 }
 
 bool SoundInterface::InitSound(HWND hWnd_)

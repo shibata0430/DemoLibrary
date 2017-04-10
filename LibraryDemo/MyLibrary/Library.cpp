@@ -14,10 +14,11 @@
 #include "Library\VerticesManager.h"
 #include "Library\SoundFileManager.h"
 #include "Library\XFileManager.h"
-#include "Library\DebugSystem.h"
 #include "Library\Font.h"
 #include "Library\CameraSetting.h"
 #include "Library\LightSetting.h"
+#include "Library\Define.h"
+#include "Library\DebugSystem.h"
 
 Library::Library() :
 m_pDirectX9(NULL),
@@ -37,14 +38,14 @@ m_pLightsetting(NULL)
 
 Library::~Library()
 {
-	delete m_pWindow;
-	delete m_pXFileManager;
-	delete m_pInputManager;
-	delete m_pSoundFileManager;
-	delete m_pTextureFileManager;
-	delete m_pVerticesManager;
-	delete m_pCameraSetting;
-	delete m_pLightsetting;
+	SafeDelete(m_pWindow);
+	SafeDelete(m_pXFileManager);
+	SafeDelete(m_pInputManager);
+	SafeDelete(m_pSoundFileManager);
+	SafeDelete(m_pTextureFileManager);
+	SafeDelete(m_pVerticesManager);
+	SafeDelete(m_pCameraSetting);
+	SafeDelete(m_pLightsetting);
 }
 
 void Library::InitLibrary(const char* titleName_, int clientWidth_, int clientHeight_, bool isFullScreen_)
@@ -258,11 +259,4 @@ void Library::ReleaseAllLight()
 void Library::ReleaseLight(int index_)
 {
 	m_pLightsetting->ReleaseLight(index_);
-}
-
-//----------------------DebugSystemクラスのパブリック関数-------------------------------
-void Library::CheckMemoryLeaK()
-{
-	DebugSystem debugSystem;
-	debugSystem.CheckMemoryLeaK();
 }

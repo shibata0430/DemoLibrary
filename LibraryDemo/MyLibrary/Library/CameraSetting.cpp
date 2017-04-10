@@ -6,7 +6,7 @@
 
 #include "CameraSetting.h"
 #include "Camera.h"
-#include "../Define.h"
+#include "DebugSystem.h"
 
 CameraSetting::CameraSetting()
 {

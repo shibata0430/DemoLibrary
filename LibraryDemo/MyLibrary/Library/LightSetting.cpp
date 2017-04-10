@@ -6,7 +6,7 @@
 
 #include "LightSetting.h"
 #include "Light.h"
-#include "../Define.h"
+#include "DebugSystem.h"
 
 LightSetting::LightSetting()
 {

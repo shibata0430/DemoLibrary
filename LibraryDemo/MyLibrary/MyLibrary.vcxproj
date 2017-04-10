@@ -96,11 +96,11 @@
     <ClCompile Include="Library\Window.cpp" />
     <ClCompile Include="Library\XFile.cpp" />
     <ClCompile Include="Library\XFileManager.cpp" />
-    <ClCompile Include="Singleton.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Library\Camera.h" />
     <ClInclude Include="Library\CameraSetting.h" />
+    <ClInclude Include="Library\Define.h" />
     <ClInclude Include="Library\Font.h" />
     <ClInclude Include="Library\DebugSystem.h" />
     <ClInclude Include="Library\InputKey.h" />
@@ -113,7 +113,6 @@
     <ClInclude Include="Library\VerticesManager.h" />
     <ClInclude Include="Library\XFile.h" />
     <ClInclude Include="Library\XFileManager.h" />
-    <ClInclude Include="Define.h" />
     <ClInclude Include="Library\DirectX9.h" />
     <ClInclude Include="Library.h" />
     <ClInclude Include="Library\InputDvice.h" />
@@ -121,7 +120,6 @@
     <ClInclude Include="Library\TextureFile.h" />
     <ClInclude Include="Library\TextureFileManager.h" />
     <ClInclude Include="Library\Window.h" />
-    <ClInclude Include="Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

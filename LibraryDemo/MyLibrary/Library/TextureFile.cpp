@@ -6,6 +6,7 @@
 
 #include "TextureFile.h"
 #include "DirectX9.h"
+#include "Define.h"
 
 TextureFile::TextureFile() : 
 m_pTexture(NULL),
@@ -16,8 +17,7 @@ m_pGraphicsDevice(DirectX9::Instance().GetDevice())
 
 TextureFile::~TextureFile()
 {
-	m_pTexture->Release();
-	m_pTexture = NULL;
+	SafeRelease(m_pTexture);
 }
 
 bool TextureFile::LoadTextureFile(const char* filePath_)

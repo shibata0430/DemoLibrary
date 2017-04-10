@@ -6,6 +6,7 @@
 
 #include "XFile.h"
 #include "DirectX9.h"
+#include "Define.h"
 
 XFile::XFile() : 
 m_pD3Device(DirectX9::Instance().GetDevice()),
@@ -19,14 +20,9 @@ m_dwNumMaterials(NULL)
 
 XFile::~XFile()
 {
-	delete[] m_pMeshMaterials;
-	m_pMeshMaterials = NULL;
-
-	delete[] m_pMeshTextures;
-	m_pMeshTextures = NULL;
-
-	m_pMesh->Release();
-	m_pMesh = NULL;
+	SafeArrayDelete(m_pMeshMaterials);
+	SafeArrayDelete(m_pMeshTextures);
+	SafeRelease(m_pMesh);
 }
 
 bool XFile::LoadXFile(const char* filePath_)

@@ -7,6 +7,7 @@
 
 #include "SoundFile.h"
 #include "SoundInterface.h"
+#include "Define.h"
 #include <tchar.h>
 
 SoundFile::SoundFile() :
@@ -17,11 +18,7 @@ m_pDsoundBuffer(NULL)
 
 SoundFile::~SoundFile()
 {
-	if (m_pDsoundBuffer != NULL)
-	{
-		m_pDsoundBuffer->Release();
-		m_pDsoundBuffer = NULL;
-	}
+	SafeRelease(m_pDsoundBuffer);
 }
 
 bool SoundFile::LoadSoundFile(const char* filePath_)

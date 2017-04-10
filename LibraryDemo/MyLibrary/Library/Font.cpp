@@ -6,6 +6,7 @@
 
 #include "Font.h"
 #include "DirectX9.h"
+#include "Define.h"
 
 Font::Font() : 
 m_pFont(NULL),
@@ -53,11 +54,7 @@ m_pGraphicsDevice(DirectX9::Instance().GetDevice())
 
 Font::~Font()
 {
-	if (m_pFont != NULL)
-	{
-		m_pFont->Release();
-		m_pFont = NULL;
-	}
+	SafeRelease(m_pFont);
 }
 
 void Font::DrawFont(const char* pString_, const D3DXVECTOR2& position_, DWORD format_, int red_, int green_, int blue_)

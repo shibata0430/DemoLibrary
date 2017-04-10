@@ -5,6 +5,7 @@
  */
 
 #include "DirectX9.h"
+#include "Define.h"
 
 DirectX9::DirectX9() :
 m_pDirect3D(NULL),
@@ -15,11 +16,8 @@ m_pD3Device(NULL)
 
 DirectX9::~DirectX9()
 {
-	m_pD3Device->Release();
-	m_pD3Device = NULL;
-
-	m_pDirect3D->Release();
-	m_pDirect3D = NULL;
+	SafeRelease(m_pD3Device);
+	SafeRelease(m_pDirect3D);
 }
 
 bool DirectX9::InitDirectX(HWND hWnd_, int clientWidth_, int clientHeight_, bool isFullScreen_)

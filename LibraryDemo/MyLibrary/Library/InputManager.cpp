@@ -6,17 +6,18 @@
 
 #include "InputManager.h"
 #include "InputKey.h"
-#include "../Define.h"
+#include "Define.h"
+#include "DebugSystem.h"
 
 InputManager::InputManager() : 
 m_pInputKey(New InputKey)
 {
-
+	MyAssert(m_pInputKey, "NULLが入っています");
 }
 
 InputManager::~InputManager()
 {
-	delete m_pInputKey;
+	SafeDelete(m_pInputKey);
 }
 
 void InputManager::UpdateDI()

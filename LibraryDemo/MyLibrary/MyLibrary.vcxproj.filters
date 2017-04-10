@@ -40,9 +40,6 @@
     <Filter Include="Library\XFileManager\XFile">
       <UniqueIdentifier>{a9cda841-7ac6-4570-9d9b-3f3abf1973e9}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Library\DebugSystem">
-      <UniqueIdentifier>{52ad21a9-b71f-4a98-8686-1c5701672515}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Library\Window">
       <UniqueIdentifier>{127cada1-9efb-4268-9b03-f790bf2a1e15}</UniqueIdentifier>
     </Filter>
@@ -67,8 +64,11 @@
     <Filter Include="Library\LightSetting\Light">
       <UniqueIdentifier>{d80fd5d6-f444-4fe1-a6d8-60f243361d0c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Singleton">
-      <UniqueIdentifier>{73d47f76-1e95-4338-b712-c382a083e357}</UniqueIdentifier>
+    <Filter Include="OftenUseSystem">
+      <UniqueIdentifier>{d806dacc-e3a5-464e-95ca-ae927016d7e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OftenUseSystem\DebugSystem">
+      <UniqueIdentifier>{52ad21a9-b71f-4a98-8686-1c5701672515}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -112,7 +112,7 @@
       <Filter>Library\Window</Filter>
     </ClCompile>
     <ClCompile Include="Library\DebugSystem.cpp">
-      <Filter>Library\DebugSystem</Filter>
+      <Filter>OftenUseSystem\DebugSystem</Filter>
     </ClCompile>
     <ClCompile Include="Library\InputManager.cpp">
       <Filter>Library\InputManager</Filter>
@@ -134,9 +134,6 @@
     </ClCompile>
     <ClCompile Include="Library\LightSetting.cpp">
       <Filter>Library\LightSetting</Filter>
-    </ClCompile>
-    <ClCompile Include="Singleton.cpp">
-      <Filter>Singleton</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -180,7 +177,7 @@
       <Filter>Library\Window</Filter>
     </ClInclude>
     <ClInclude Include="Library\DebugSystem.h">
-      <Filter>Library\DebugSystem</Filter>
+      <Filter>OftenUseSystem\DebugSystem</Filter>
     </ClInclude>
     <ClInclude Include="Library\InputManager.h">
       <Filter>Library\InputManager</Filter>
@@ -203,11 +200,8 @@
     <ClInclude Include="Library\LightSetting.h">
       <Filter>Library\LightSetting</Filter>
     </ClInclude>
-    <ClInclude Include="Singleton.h">
-      <Filter>Singleton</Filter>
-    </ClInclude>
-    <ClInclude Include="Define.h">
-      <Filter>Library</Filter>
+    <ClInclude Include="Library\Define.h">
+      <Filter>OftenUseSystem</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

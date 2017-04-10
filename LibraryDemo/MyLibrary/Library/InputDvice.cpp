@@ -5,6 +5,7 @@
  */
 
 #include "InputDvice.h"
+#include "Define.h"
 
 InputDevice::InputDevice() :
 m_pDinput(NULL),
@@ -15,17 +16,9 @@ m_pKeyDevice(NULL)
 
 InputDevice::~InputDevice()
 {
-	if (m_pKeyDevice != NULL)
-	{
-		m_pKeyDevice->Release();
-		m_pKeyDevice = NULL;
-	}
 
-	if (m_pDinput != NULL)
-	{
-		m_pDinput->Release();
-		m_pDinput = NULL;
-	}
+	SafeRelease(m_pKeyDevice);
+	SafeRelease(m_pDinput);
 }
 
 bool InputDevice::InitInput()

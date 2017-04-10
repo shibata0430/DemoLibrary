@@ -6,7 +6,7 @@
 
 #include "XFileManager.h"
 #include "XFile.h"
-#include "../Define.h"
+#include "DebugSystem.h"
 
 XFileManager::XFileManager()
 {
