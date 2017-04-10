@@ -6,7 +6,7 @@
 
 #include "CameraSetting.h"
 #include "Camera.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 CameraSetting::CameraSetting()
 {

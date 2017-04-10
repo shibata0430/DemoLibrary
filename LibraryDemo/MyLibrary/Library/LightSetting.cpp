@@ -6,7 +6,7 @@
 
 #include "LightSetting.h"
 #include "Light.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 LightSetting::LightSetting()
 {

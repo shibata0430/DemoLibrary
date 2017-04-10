@@ -182,9 +182,6 @@
     <ClInclude Include="Library\DebugSystem.h">
       <Filter>Library\DebugSystem</Filter>
     </ClInclude>
-    <ClInclude Include="SearchMemoryLeak.h">
-      <Filter>Library</Filter>
-    </ClInclude>
     <ClInclude Include="Library\InputManager.h">
       <Filter>Library\InputManager</Filter>
     </ClInclude>
@@ -208,6 +205,9 @@
     </ClInclude>
     <ClInclude Include="Singleton.h">
       <Filter>Singleton</Filter>
+    </ClInclude>
+    <ClInclude Include="Define.h">
+      <Filter>Library</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

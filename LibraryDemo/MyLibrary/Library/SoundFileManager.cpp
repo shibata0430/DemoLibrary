@@ -6,7 +6,7 @@
 
 #include "SoundFileManager.h"
 #include "SoundFile.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 SoundFileManager::SoundFileManager()
 {

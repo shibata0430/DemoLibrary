@@ -6,7 +6,7 @@
 
 #include "XFileManager.h"
 #include "XFile.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 XFileManager::XFileManager()
 {

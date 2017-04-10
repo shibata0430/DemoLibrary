@@ -6,7 +6,7 @@
 
 #include "VerticesManager.h"
 #include "Vertices.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 VerticesManager::VerticesManager()
 {

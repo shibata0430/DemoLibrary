@@ -44,8 +44,8 @@
     <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
-    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -113,7 +113,7 @@
     <ClInclude Include="Library\VerticesManager.h" />
     <ClInclude Include="Library\XFile.h" />
     <ClInclude Include="Library\XFileManager.h" />
-    <ClInclude Include="SearchMemoryLeak.h" />
+    <ClInclude Include="Define.h" />
     <ClInclude Include="Library\DirectX9.h" />
     <ClInclude Include="Library.h" />
     <ClInclude Include="Library\InputDvice.h" />

@@ -6,7 +6,7 @@
 
 #include "InputManager.h"
 #include "InputKey.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 InputManager::InputManager() : 
 m_pInputKey(New InputKey)

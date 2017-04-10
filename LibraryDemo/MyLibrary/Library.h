@@ -9,7 +9,7 @@
 
 #define DIRECTINPUT_VERSION 0x0800
 
-#include "SearchMemoryLeak.h"
+#include "Define.h"
 #include <dinput.h>
 #include <d3dx9.h>
 

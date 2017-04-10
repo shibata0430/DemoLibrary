@@ -6,7 +6,7 @@
 
 #include "TextureFileManager.h"
 #include "TextureFile.h"
-#include "../SearchMemoryLeak.h"
+#include "../Define.h"
 
 TextureFileManager::TextureFileManager()
 {

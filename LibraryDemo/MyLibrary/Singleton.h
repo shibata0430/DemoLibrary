@@ -7,7 +7,7 @@
 #ifndef SINGLETON_H
 #define SINGLETON_H
 
-#include "SearchMemoryLeak.h"
+#include "Define.h"
 #include <memory>
 
 template<class Type>
