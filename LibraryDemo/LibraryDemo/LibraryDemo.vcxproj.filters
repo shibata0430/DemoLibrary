@@ -28,6 +28,9 @@
     <Filter Include="Main\Application\Scene\Button">
       <UniqueIdentifier>{dc07c6ac-85d7-468e-9665-f4c93e1fad25}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Resource">
+      <UniqueIdentifier>{6a7cb086-0fb2-4ca3-9786-b731dfa420b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -48,6 +51,15 @@
     <ClCompile Include="Scene\TitleScene.cpp">
       <Filter>Main\Application\Scene\TitleScene</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\MainScene.cpp">
+      <Filter>Main\Application\Scene\MainScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\LogoScene.cpp">
+      <Filter>Main\Application\Scene\LogoScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Button\Button.cpp">
+      <Filter>Main\Application\Scene\Button</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -64,6 +76,15 @@
     </ClInclude>
     <ClInclude Include="Scene\TitleScene.h">
       <Filter>Main\Application\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\MainScene.h">
+      <Filter>Main\Application\Scene\MainScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\LogoScene.h">
+      <Filter>Main\Application\Scene\LogoScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Button\Button.h">
+      <Filter>Main\Application\Scene\Button</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

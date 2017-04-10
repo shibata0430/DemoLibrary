@@ -11,7 +11,12 @@
 
 class TitleScene : public Scene
 {
+public:
+	TitleScene();
+	virtual ~TitleScene();
 
+	virtual Scene::ID Control();
+	virtual void Draw();
 };
 
 #endif // !TITLESCENE_H

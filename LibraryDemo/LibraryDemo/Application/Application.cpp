@@ -7,17 +7,15 @@
 #include "Application.h"
 #include "../Scene/SceneTransition.h"
 #include <Library.h>
-#include <assert.h>
+#include <Library\DebugSystem.h>
+
 
 Application::Application() : 
 m_rLibrary(Library::Instace()),
 m_pSceneTransition(New SceneTransition),
 m_isGameEnd(false)
 {
-	if(m_pSceneTransition == NULL)
-	{
-		assert(m_pSceneTransition);
-	}
+	MyAssert(m_pSceneTransition, "NULL‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
 }
 
 Application::~Application()

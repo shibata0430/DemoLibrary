@@ -7,19 +7,28 @@
 #ifndef SCENEFACTORY_H
 #define SCENEFACTORY_H
 
-#include <Singleton.h>
 #include "Scene.h"
+#include <Library\DebugSystem.h>
 
-class SceneFactory
+class LogoScene;
+class TitleScene;
+class MainScene;
+
+class SceneFactory 
 {
 private:
-	friend Singleton<SceneFactory>;
-
 	SceneFactory();
 	~SceneFactory();
 
 public:
-	Scene* CreateScene(Scene::ID sceneID_);
+
+	static SceneFactory& Instace()
+	{
+		static SceneFactory m_scenFactory;
+		return m_scenFactory;
+	}
+
+	Scene* CreateScene(Scene::ID sceneID_);	
 };
 
 #endif // !SCENEFACTORY_H

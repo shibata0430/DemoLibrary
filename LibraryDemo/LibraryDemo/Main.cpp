@@ -1,4 +1,6 @@
 #include <Library.h>
+#include <Library\DebugSystem.h>
+#include <Library\Define.h>
 #include "Application\Application.h"
 
 namespace
@@ -12,9 +14,10 @@ namespace
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
 	Library*		pLibrary = &Library::Instace();
+	DebugSystem*	pDebugSystem = New DebugSystem;
 	Application*	pApplication = NULL;
 
-	pLibrary->CheckMemoryLeaK();
+	pDebugSystem->CheckMemoryLeaK();
 
 	pLibrary->InitLibrary(title, clientWidth, clientHeight, false);
 
@@ -35,6 +38,8 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 		}
 	}
 
-	delete pApplication;
+
+	SafeDelete(pDebugSystem);
+	SafeDelete(pApplication);
 	return 0;
 }

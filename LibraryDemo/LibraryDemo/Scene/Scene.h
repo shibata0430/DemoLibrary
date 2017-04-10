@@ -16,17 +16,18 @@ public:
 	{
 		LOGO_SCENE,
 		TITLE_SCENE,
-		MAIN_SCENE
+		MAIN_SCENE,
+		FINISH
 	};
 
 public:
-	Scene(Scene::ID sceneID_);
-	~Scene();
+	explicit Scene(Scene::ID sceneID_);
+	virtual ~Scene();
 
 	virtual Scene::ID Control() = 0;
 	virtual void Draw() = 0;
 
-private:
+protected:
 	Library& m_rLibrary;
 };
 

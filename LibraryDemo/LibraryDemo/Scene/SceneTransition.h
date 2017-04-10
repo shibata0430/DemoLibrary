@@ -7,6 +7,9 @@
 #ifndef SCENETRANSITION_H
 #define SCENETRANSITION_H
 
+#include "Scene.h"
+class SceneFactory;
+
 class SceneTransition
 {
 public:
@@ -16,8 +19,20 @@ public:
 	bool Control();
 	void Render();
 
+public:
+	enum State
+	{
+		CREATE,
+		RUN,
+		RELEASE
+	};
+
 private:
-	bool m_isControlEnd;
+	SceneFactory*	m_pSceneFactory;
+	Scene*			m_pScene;
+	Scene::ID		m_nextSceneID;
+	State			m_state;
+	bool			m_isControlEnd;
 };
 
 #endif // !SCENETRANSITION_H
