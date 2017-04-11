@@ -31,6 +31,9 @@
     <Filter Include="Main\Application\ResourceManager">
       <UniqueIdentifier>{6a7cb086-0fb2-4ca3-9786-b731dfa420b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Scene\MainScene\Character">
+      <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -63,6 +66,12 @@
     <ClCompile Include="ResourceManager\ResourceManager.cpp">
       <Filter>Main\Application\ResourceManager</Filter>
     </ClCompile>
+    <ClCompile Include="Scene\Logo.cpp">
+      <Filter>Main\Application\Scene\LogoScene</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\CharacterManager.cpp">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -91,6 +100,12 @@
     </ClInclude>
     <ClInclude Include="ResourceManager\ResourceManager.h">
       <Filter>Main\Application\ResourceManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\Logo.h">
+      <Filter>Main\Application\Scene\LogoScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\CharacterManager.h">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
