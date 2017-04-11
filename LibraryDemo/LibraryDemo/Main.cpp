@@ -37,8 +37,6 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 			oldTime += 1000;
 		}
 	}
-
-
 	SafeDelete(pDebugSystem);
 	SafeDelete(pApplication);
 	return 0;

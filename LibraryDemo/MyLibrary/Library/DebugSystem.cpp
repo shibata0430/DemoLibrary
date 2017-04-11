@@ -28,14 +28,14 @@ void DebugSystem::CheckMemoryLeaK()
 	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
 }
 
-void DebugSystem::OutputDebugLog(const char * _pStr, ...)
+void DebugSystem::OutputDebugLog(const char* pString_, ...)
 {
 	TCHAR OutputStr[g_debugLogMax];
 	va_list ArgsList;
 
-	va_start(ArgsList, _pStr);
+	va_start(ArgsList, pString_);
 
-	vsprintf_s(OutputStr, sizeof(OutputStr), _pStr, ArgsList);
+	vsprintf_s(OutputStr, sizeof(OutputStr), pString_, ArgsList);
 	OutputDebugString(OutputStr);
 
 	va_end(ArgsList);

@@ -10,7 +10,6 @@
 #include "TitleScene.h"
 #include <Library\DebugSystem.h>
 
-
 SceneFactory::SceneFactory()
 {
 

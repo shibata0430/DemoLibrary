@@ -15,7 +15,9 @@ class Light;
 class LightSetting
 {
 public:
+	/**コンストラクタ*/
 	LightSetting();
+	/**デストラクタ*/
 	~LightSetting();
 
 	/**

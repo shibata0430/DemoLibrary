@@ -13,12 +13,19 @@
 class DebugSystem
 {
 public:
+	/**コンストラクタ*/
 	DebugSystem();
+	/**デストラクタ*/
 	~DebugSystem();
 
+	/**メモリリークのチェック関数*/
 	void CheckMemoryLeaK();
 
-	static void OutputDebugLog(const char* _pStr, ...);
+	/**
+	 * デバッグログに出力する関数
+	 * @param [out] pString	出力する文字列
+	 */
+	static void OutputDebugLog(const char* pString_, ...);
 };
 
 // メモリを動的に確保するときに使うnewは必ずNewの方を使ってください

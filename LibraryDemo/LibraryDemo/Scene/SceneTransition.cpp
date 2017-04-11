@@ -20,7 +20,7 @@ m_isControlEnd(false)
 
 SceneTransition::~SceneTransition()
 {
-	SafeDelete(m_pScene);
+	SafeDelete(m_pScene);	// Factoryで各シーンを動的に確保しているので開放している
 }
 
 bool SceneTransition::Control()

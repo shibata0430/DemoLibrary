@@ -28,7 +28,7 @@
     <Filter Include="Main\Application\Scene\Button">
       <UniqueIdentifier>{dc07c6ac-85d7-468e-9665-f4c93e1fad25}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Application\Resource">
+    <Filter Include="Main\Application\ResourceManager">
       <UniqueIdentifier>{6a7cb086-0fb2-4ca3-9786-b731dfa420b0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -60,6 +60,9 @@
     <ClCompile Include="Button\Button.cpp">
       <Filter>Main\Application\Scene\Button</Filter>
     </ClCompile>
+    <ClCompile Include="ResourceManager\ResourceManager.cpp">
+      <Filter>Main\Application\ResourceManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -85,6 +88,9 @@
     </ClInclude>
     <ClInclude Include="Button\Button.h">
       <Filter>Main\Application\Scene\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceManager\ResourceManager.h">
+      <Filter>Main\Application\ResourceManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

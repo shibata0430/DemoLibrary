@@ -8,6 +8,7 @@
 #include "../Scene/SceneTransition.h"
 #include <Library.h>
 #include <Library\DebugSystem.h>
+#include <Library\Define.h>
 
 
 Application::Application() : 
@@ -20,7 +21,7 @@ m_isGameEnd(false)
 
 Application::~Application()
 {
-	delete m_pSceneTransition;
+	SafeDelete(m_pSceneTransition);
 }
 
 bool Application::Run()

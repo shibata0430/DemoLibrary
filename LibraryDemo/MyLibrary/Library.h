@@ -12,6 +12,7 @@
 #include <dinput.h>
 #include <d3dx9.h>
 
+/// 頂点フォーマット
 #define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1)
 
 class DirectX9;
@@ -26,6 +27,7 @@ class XFileManager;
 class CameraSetting;
 class LightSetting;
 
+/// サウンドを鳴らす状態
 enum SoundMode
 {
 	PLAY,
@@ -36,6 +38,7 @@ enum SoundMode
 	RESET_STOP,
 };
 
+/// キーの状態
 enum KeyState
 {
 	PUSH,
@@ -74,6 +77,7 @@ public:		// Libraryクラスのパブリック関数
 	void InitLibrary(const char* titleName_, int clientWidth_, int clientHeight_, bool isFullScreen_);
 
 public:		// Windowクラスのパブリック関数
+	/**ウィンドウの更新関数*/
 	bool Update();
 
 public:		// DirectX9クラスのパブリック関数
@@ -318,10 +322,6 @@ public:		// Lightsettingクラスのパブリック関数
 	* @param [in] index_	解放する配列番号
 	*/
 	void ReleaseLight(int index_);
-
-public:		// DebugSystemクラスのパブリック関数
-	/**メモリリークを発見する関数*/
-	void CheckMemoryLeaK();
 
 private:
 	DirectX9*				m_pDirectX9;

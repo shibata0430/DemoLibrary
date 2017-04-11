@@ -7,6 +7,7 @@
 #ifndef DEFINE_H
 #define DEFINE_H
 
+// Release関数を使う開放関数
 template<typename Type>
 void SafeRelease(Type* type_)
 {
@@ -17,6 +18,7 @@ void SafeRelease(Type* type_)
 	}
 }
 
+// 動的に確保したものを開放する関数
 template<typename Type>
 void SafeDelete(Type* type_)
 {
@@ -27,6 +29,7 @@ void SafeDelete(Type* type_)
 	}
 }
 
+// 動的配列の開放関数
 template<typename Type>
 void SafeArrayDelete(Type* type_)
 {

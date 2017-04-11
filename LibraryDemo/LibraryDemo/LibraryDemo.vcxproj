@@ -76,6 +76,10 @@
     <IncludePath>../MyLibrary;$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
     <LibraryPath>../Release;$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>../MyLibrary;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>../Debug;C:\Program Files %28x86%29\Microsoft DirectX SDK %28June 2010%29\Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
@@ -92,6 +96,9 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
     </ClCompile>
+    <Link>
+      <AdditionalDependencies>MyLibrary.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -124,6 +131,7 @@
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Button\Button.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ResourceManager\ResourceManager.cpp" />
     <ClCompile Include="Scene\LogoScene.cpp" />
     <ClCompile Include="Scene\MainScene.cpp" />
     <ClCompile Include="Scene\Scene.cpp" />
@@ -134,6 +142,7 @@
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Button\Button.h" />
+    <ClInclude Include="ResourceManager\ResourceManager.h" />
     <ClInclude Include="Scene\LogoScene.h" />
     <ClInclude Include="Scene\MainScene.h" />
     <ClInclude Include="Scene\Scene.h" />

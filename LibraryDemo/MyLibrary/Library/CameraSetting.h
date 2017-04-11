@@ -15,7 +15,9 @@ class Camera;
 class CameraSetting
 {
 public:
+	/**コンストラクタ*/
 	CameraSetting();
+	/**デストラクタ*/
 	~CameraSetting();
 
 	/**
