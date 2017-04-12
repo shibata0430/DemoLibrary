@@ -130,7 +130,10 @@
   <ItemGroup>
     <ClCompile Include="Application\Application.cpp" />
     <ClCompile Include="Button\Button.cpp" />
+    <ClCompile Include="CameraController\CameraController.cpp" />
+    <ClCompile Include="Character\Character.cpp" />
     <ClCompile Include="Character\CharacterManager.cpp" />
+    <ClCompile Include="Character\Player.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="ResourceManager\ResourceManager.cpp" />
     <ClCompile Include="Scene\Logo.cpp" />
@@ -144,7 +147,10 @@
   <ItemGroup>
     <ClInclude Include="Application\Application.h" />
     <ClInclude Include="Button\Button.h" />
+    <ClInclude Include="CameraController\CameraController.h" />
+    <ClInclude Include="Character\Character.h" />
     <ClInclude Include="Character\CharacterManager.h" />
+    <ClInclude Include="Character\Player.h" />
     <ClInclude Include="ResourceManager\ResourceManager.h" />
     <ClInclude Include="Scene\Logo.h" />
     <ClInclude Include="Scene\LogoScene.h" />

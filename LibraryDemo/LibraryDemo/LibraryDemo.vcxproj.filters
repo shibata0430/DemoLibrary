@@ -34,6 +34,9 @@
     <Filter Include="Main\Application\Scene\MainScene\Character">
       <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Scene\MainScene\CameraController">
+      <UniqueIdentifier>{ee8e2305-8851-4ea8-92ce-11e620e4c7c1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -72,6 +75,15 @@
     <ClCompile Include="Character\CharacterManager.cpp">
       <Filter>Main\Application\Scene\MainScene\Character</Filter>
     </ClCompile>
+    <ClCompile Include="Character\Character.cpp">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\Player.cpp">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraController\CameraController.cpp">
+      <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -106,6 +118,15 @@
     </ClInclude>
     <ClInclude Include="Character\CharacterManager.h">
       <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\Character.h">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\Player.h">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="CameraController\CameraController.h">
+      <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
