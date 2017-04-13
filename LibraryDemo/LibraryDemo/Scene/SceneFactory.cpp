@@ -12,7 +12,7 @@
 
 SceneFactory::SceneFactory()
 {
-
+	int a = 0;
 }
 
 SceneFactory::~SceneFactory()

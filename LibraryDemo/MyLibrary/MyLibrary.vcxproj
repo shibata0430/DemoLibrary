@@ -120,6 +120,7 @@
     <ClInclude Include="Library\TextureFile.h" />
     <ClInclude Include="Library\TextureFileManager.h" />
     <ClInclude Include="Library\Window.h" />
+    <ClInclude Include="Library\Singleton.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

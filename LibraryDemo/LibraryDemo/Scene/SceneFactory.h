@@ -9,14 +9,17 @@
 
 #include "Scene.h"
 #include <Library\DebugSystem.h>
+#include <Library\Singleton.h>
 
 class LogoScene;
 class TitleScene;
 class MainScene;
 
-class SceneFactory 
+class SceneFactory : public Singleton<SceneFactory>
 {
 private:
+	friend Singleton<SceneFactory>;
+
 	/**
 	 * コンストラクタ
 	 * @attntion Singletonパターンを使用しているためprivateに
@@ -24,20 +27,12 @@ private:
 	SceneFactory();
 
 	/**
-	 * デストラクタ
-	 * @attntion コンストラクタと同様の理由
-	 */
-	~SceneFactory();
+	* デストラクタ
+	* @attntion コンストラクタと同様の理由
+	*/
+	virtual ~SceneFactory();
 
 public:
-
-	// インスタンスの取得
-	static SceneFactory& Instace()
-	{
-		static SceneFactory m_scenFactory;
-		return m_scenFactory;
-	}
-
 	/**
 	 * 各シーンの生成関数
 	 * @param [in] sceneID_	次のシーンＩＤ

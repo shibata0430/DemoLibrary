@@ -203,5 +203,8 @@
     <ClInclude Include="Library\Define.h">
       <Filter>OftenUseSystem</Filter>
     </ClInclude>
+    <ClInclude Include="Library\Singleton.h">
+      <Filter>OftenUseSystem</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
