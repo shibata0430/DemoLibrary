@@ -12,7 +12,7 @@
 SceneTransition::SceneTransition() :
 m_pSceneFactory(&SceneFactory::Instace()),
 m_pScene(NULL),
-m_nextSceneID(Scene::ID::LOGO_SCENE),
+m_nextSceneID(Scene::ID::MAIN_SCENE),
 m_state(CREATE),
 m_isControlEnd(false)
 {
@@ -25,7 +25,7 @@ SceneTransition::~SceneTransition()
 
 bool SceneTransition::Control()
 {
-	Scene::ID currentSceneID = Scene::ID::LOGO_SCENE;
+	Scene::ID currentSceneID = Scene::ID::MAIN_SCENE;
 
 	switch (m_state)
 	{
