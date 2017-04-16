@@ -8,6 +8,7 @@
 #define PLAYER_H
 
 #include "Character.h"
+#include <d3dx9.h>
 
 class Player : public Character
 {
@@ -20,6 +21,10 @@ public:
 
 private:
 	void Move();
+
+private:
+	D3DXVECTOR3 m_playerPos;
+	float		m_rotateAngle;
 };
 
 #endif // !PLAYER_H

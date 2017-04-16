@@ -7,10 +7,20 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
+#include <d3dx9.h>
+
 class Library;
+class CameraController;
+
 
 class Character
 {
+public:
+	enum MeshKind
+	{
+		PLAYER,
+	};
+
 public:
 	/**コンストラクタ*/
 	Character();
@@ -22,8 +32,12 @@ public:
 	/**描画関数*/
 	virtual void Draw() = 0;
 
-private:
-	Library& m_rLibrary;
+protected:
+	void Transform3D(D3DXVECTOR3 localPos_, float angle_);
+
+protected:
+	Library&			m_rLibrary;
+	CameraController*	m_pCameraController;
 };
 
 #endif // !CHARACTER_H
