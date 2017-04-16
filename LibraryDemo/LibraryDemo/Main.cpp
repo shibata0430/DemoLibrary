@@ -20,6 +20,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 	pDebugSystem->CheckMemoryLeaK();
 
 	pLibrary->InitLibrary(title, clientWidth, clientHeight, false);
+	pLibrary->Init3DDraw();
 
 	pApplication = New Application;
 	DWORD currentTime;
@@ -35,6 +36,7 @@ int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 				break;
 			}
 			oldTime += 1000;
+			Sleep(1);
 		}
 	}
 	SafeDelete(pDebugSystem);
