@@ -15,8 +15,6 @@
 #include "Library\SoundFileManager.h"
 #include "Library\XFileManager.h"
 #include "Library\Font.h"
-#include "Library\CameraSetting.h"
-#include "Library\LightSetting.h"
 #include "Library\Define.h"
 #include "Library\DebugSystem.h"
 
@@ -29,9 +27,7 @@ m_pWindow(NULL),
 m_pTextureFileManager(NULL),
 m_pVerticesManager(NULL),
 m_pSoundFileManager(NULL),
-m_pXFileManager(NULL),
-m_pCameraSetting(NULL),
-m_pLightsetting(NULL)
+m_pXFileManager(NULL)
 {
 
 }
@@ -44,8 +40,6 @@ Library::~Library()
 	SafeDelete(m_pSoundFileManager);
 	SafeDelete(m_pTextureFileManager);
 	SafeDelete(m_pVerticesManager);
-	SafeDelete(m_pCameraSetting);
-	SafeDelete(m_pLightsetting);
 }
 
 void Library::InitLibrary(const char* titleName_, int clientWidth_, int clientHeight_, bool isFullScreen_)
@@ -68,8 +62,6 @@ void Library::InitLibrary(const char* titleName_, int clientWidth_, int clientHe
 	m_pVerticesManager		= New VerticesManager;
 	m_pXFileManager			= New XFileManager;
 	m_pSoundFileManager		= New SoundFileManager;
-	m_pCameraSetting		= New CameraSetting;
-	m_pLightsetting			= New LightSetting;
 }
 
 //---------------------Windowクラスのパブリック関数----------------------------------
@@ -77,6 +69,16 @@ bool Library::Update()
 {
 	bool isUpdate = m_pWindow->Update();
 	return isUpdate;
+}
+
+int Library::GetWinWidth()
+{
+	return m_pWindow->GetWidth();
+}
+
+int Library::GetWinHeight()
+{
+	return m_pWindow->GetHeight();
 }
 
 //---------------------DirectX9クラスのパブリック関数--------------------------------
@@ -227,36 +229,4 @@ void Library::DrawFont(int width_, int height_, const char* pString_, float posX
 {
 	Font font(width_, height_);
 	font.DrawFont(pString_, D3DXVECTOR2(posX_, posY_), format_, red_, green_, blue_);
-}
-
-//----------------------CameraSettingクラスのパブリック関数-----------------------------
-void Library::TransformView(int index_, const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& lookAtPoint_, float angle_, float nearZ_, float farZ_)
-{
-	m_pCameraSetting->TransformView(index_, eyePoint_, lookAtPoint_, static_cast<float>(m_pWindow->GetAspect()), angle_, nearZ_, farZ_);
-}
-
-void Library::ReleaseAllCamera()
-{
-	m_pCameraSetting->ReleaseAllCamera();
-}
-
-void Library::ReleaseCamera(int index_)
-{
-	m_pCameraSetting->ReleaseCamera(index_);
-}
-
-//-----------------------Lightsettingクラスのパブリック関数-----------------------------
-void Library::Lighting(int index_, const D3DXVECTOR3& direction_)
-{
-	m_pLightsetting->Lighting(index_, direction_);
-}
-
-void Library::ReleaseAllLight()
-{
-	m_pLightsetting->ReleaseAllLight();
-}
-
-void Library::ReleaseLight(int index_)
-{
-	m_pLightsetting->ReleaseLight(index_);
 }

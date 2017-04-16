@@ -52,23 +52,17 @@
     <Filter Include="Library\Font">
       <UniqueIdentifier>{30827307-f3fa-4984-ac96-35f67bd2628e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Library\CameraSetting">
-      <UniqueIdentifier>{4f4250bc-97d6-4cf7-8cec-5a74dc1844fa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Library\CameraSetting\Camera">
-      <UniqueIdentifier>{0144ea49-fa6f-416b-beaf-ba7416e270bd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Library\LightSetting">
-      <UniqueIdentifier>{681e8681-a783-41b2-84d5-912ed14b8297}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Library\LightSetting\Light">
-      <UniqueIdentifier>{d80fd5d6-f444-4fe1-a6d8-60f243361d0c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="OftenUseSystem">
       <UniqueIdentifier>{d806dacc-e3a5-464e-95ca-ae927016d7e6}</UniqueIdentifier>
     </Filter>
     <Filter Include="OftenUseSystem\DebugSystem">
       <UniqueIdentifier>{52ad21a9-b71f-4a98-8686-1c5701672515}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OftenUseSystem\Camera">
+      <UniqueIdentifier>{0144ea49-fa6f-416b-beaf-ba7416e270bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OftenUseSystem\Light">
+      <UniqueIdentifier>{d80fd5d6-f444-4fe1-a6d8-60f243361d0c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -124,16 +118,10 @@
       <Filter>Library\Font</Filter>
     </ClCompile>
     <ClCompile Include="Library\Camera.cpp">
-      <Filter>Library\CameraSetting\Camera</Filter>
-    </ClCompile>
-    <ClCompile Include="Library\CameraSetting.cpp">
-      <Filter>Library\CameraSetting</Filter>
+      <Filter>OftenUseSystem\Camera</Filter>
     </ClCompile>
     <ClCompile Include="Library\Light.cpp">
-      <Filter>Library\LightSetting\Light</Filter>
-    </ClCompile>
-    <ClCompile Include="Library\LightSetting.cpp">
-      <Filter>Library\LightSetting</Filter>
+      <Filter>OftenUseSystem\Light</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -189,16 +177,10 @@
       <Filter>Library\Font</Filter>
     </ClInclude>
     <ClInclude Include="Library\Camera.h">
-      <Filter>Library\CameraSetting\Camera</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\CameraSetting.h">
-      <Filter>Library\CameraSetting</Filter>
+      <Filter>OftenUseSystem\Camera</Filter>
     </ClInclude>
     <ClInclude Include="Library\Light.h">
-      <Filter>Library\LightSetting\Light</Filter>
-    </ClInclude>
-    <ClInclude Include="Library\LightSetting.h">
-      <Filter>Library\LightSetting</Filter>
+      <Filter>OftenUseSystem\Light</Filter>
     </ClInclude>
     <ClInclude Include="Library\Define.h">
       <Filter>OftenUseSystem</Filter>

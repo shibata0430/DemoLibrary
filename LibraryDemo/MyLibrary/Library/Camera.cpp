@@ -8,7 +8,9 @@
 #include "DirectX9.h"
 
 Camera::Camera() : 
-m_pGraphicsDevice(DirectX9::Instance().GetDevice())
+m_pGraphicsDevice(DirectX9::Instance().GetDevice()),
+m_winWidth(0),
+m_winHeight(0)
 {
 
 }
@@ -18,9 +20,15 @@ Camera::~Camera()
 
 }
 
-void Camera::TransformView(const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& lookAtPoint_, float aspect_, float angle_, float nearZ_, float farZ_)
+void Camera::InputWindowSize(int width_, int height_)
 {
-		D3DXMATRIXA16 matView;
+	m_winWidth	= width_;
+	m_winHeight = height_;
+}
+
+void Camera::TransformView(const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& lookAtPoint_, float angle_, float nearZ_, float farZ_)
+{
+	D3DXMATRIXA16 matView;
 	{
 		D3DXVECTOR3 vecUpVec(0.0f, 1.0f, 0.0f);	//カメラの上下の向きを決める
 
@@ -40,7 +48,7 @@ void Camera::TransformView(const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& look
 
 		D3DXMatrixIdentity(&matProj);
 
-		//画角
+		// 画角
 		/*
 		* 主にズームイン。アウトで使われる
 		* 画角を狭くするとモデルは大きく見えようになり、画角を広くするとモデルは小さく見えるようになる
@@ -52,13 +60,13 @@ void Camera::TransformView(const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& look
 		* レンダリングターゲットの縦横比の設定に使用する　比率の求め方は 横 / 縦
 		* レンダリングターゲットとは簡単に言うと最終的に画面に描画されているものだと思う
 		*/
-		float aspect = aspect_;
+		float aspect = static_cast<float>(m_winWidth / m_winHeight);
 
 		// 奥行き方向をどこからどこまで描画するかの設定
 		// 一番近い描画位置
 		float nearZ = nearZ_;
 
-		//一番遠い描画位置
+		// 一番遠い描画位置
 		float farZ = farZ_;
 
 		// 今まで設定した画角、アスペクト比などを元に左手座標系パースペクティブ射影行列の作成をする関数
@@ -66,5 +74,4 @@ void Camera::TransformView(const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& look
 		D3DXMatrixPerspectiveFovLH(&matProj, viewAngle, aspect, nearZ, farZ);
 		m_pGraphicsDevice->SetTransform(D3DTS_PROJECTION, &matProj);
 	}
-
 }

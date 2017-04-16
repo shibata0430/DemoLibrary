@@ -9,6 +9,10 @@
 
 #include "Scene.h"
 
+class CharacterManager;
+class CameraController;
+class Light;
+
 class MainScene : public Scene
 {
 public:
@@ -24,6 +28,11 @@ public:
 	virtual Scene::ID Control();
 	/**ï`âÊä÷êî*/
 	virtual void Draw();
+
+private:
+	CharacterManager*	m_pCharacterManager;
+	CameraController*	m_pCameraController;
+	Light*				m_pLight;
 };
 
 #endif // !MAINSCENE_H

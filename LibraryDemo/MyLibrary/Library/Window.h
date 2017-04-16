@@ -37,9 +37,14 @@ public:
 		return m_hWnd;
 	}
 
-	int GetAspect()
+	int GetWidth()
 	{
-		return (m_clientWidth / m_clientHeight);
+		return m_clientWidth;
+	}
+
+	int GetHeight()
+	{
+		return m_clientHeight;
 	}
 
 private:

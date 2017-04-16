@@ -7,16 +7,33 @@
 #ifndef CAMERACONTROLLER_H
 #define CAMERACONTROLLER_H
 
+#include <d3dx9.h>
+#include <Library\Singleton.h>
+
+class Camera;
 class Library;
 
-class CameraController
+class CameraController : public Singleton<CameraController>
 {
-public:
+private:
+	friend Singleton<CameraController>;
+
 	CameraController();
 	~CameraController();
 
+public:
+	/**ÉJÉÅÉâêßå‰ä÷êî*/
+	void Control();
+
+	/**ÉrÉÖÅ[ïœä∑ä÷êî*/
+	void TransformView();
+
 private:
-	Library& m_rLibrary;
+	Camera*			m_pCamera;
+	D3DXVECTOR3		m_eyePos;
+	D3DXVECTOR3		m_lookAtPos;
+	Library&		m_rLibrary;
+	float			m_angle;
 };
 
 #endif // !CAMERACONTROLLER_H

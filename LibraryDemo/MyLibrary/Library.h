@@ -24,8 +24,6 @@ class TextureFileManager;
 class VerticesManager;
 class SoundFileManager;
 class XFileManager;
-class CameraSetting;
-class LightSetting;
 
 /// サウンドを鳴らす状態
 enum SoundMode
@@ -80,6 +78,10 @@ public:		// Windowクラスのパブリック関数
 	/**ウィンドウの更新関数*/
 	bool Update();
 
+	int GetWinWidth();
+
+	int GetWinHeight();
+
 public:		// DirectX9クラスのパブリック関数
 	/**
 	* 頂点フォーマットの設定関数
@@ -115,7 +117,6 @@ public:		// InputManagerクラスのパブリック関数
 	* @return			state	キーの状態
 	*/
 	KeyState CheckKey(int dik_);
-
 
 public:		// TextureFileManagerクラスのパブリック関数
 	/**
@@ -280,49 +281,6 @@ public:		// Fontクラスのパブリック関数
 	*/
 	void DrawFont(int width_, int height_, const char* pString_, float posX_, float posY_, DWORD format_ = DT_LEFT, int red_ = 255, int green_ = 255, int blue_ = 255);
 
-public:		// CameraSettingクラスのパブリック関数
-	/**
-	* カメラ座標と射影を設定する関数
-	* @param [in]	index_			配置するカメラID
-	* @param [in]	eyePoint_		カメラの角度(レンズ)が正面を向いてる状態でのカメラの位置
-	* @param [in]	lookAtPoint_	カメラの位置を元にレンズの角度を決めるベクトル(方向)
-	* @param [in]	angle_			画角の広さ
-	* @param [in]	nearZ_			カメラが移せる一番近い描画位置
-	* @param [in]	farZ_			カメラが移せる一番遠い描画位置
-	* @note nearZ_のデフォルト値は1.0f
-	* @note farZ_のデフォルト値は10000.0f
-	* @note angle_のデフォルト値は50.0f
-	*/
-	void TransformView(int index_, const D3DXVECTOR3& eyePoint_, const D3DXVECTOR3& lookAtPoint_, float angle_ = 50.0f, float nearZ_ = 1.0f, float farZ_ = 10000.0f);
-
-	/**全てのカメラの解放関数*/
-	void ReleaseAllCamera();
-
-	/**
-	* 一部のカメラの解放関数
-	* @param [in] index_	解放するカメラID
-	*/
-	void ReleaseCamera(int index_);
-
-public:		// Lightsettingクラスのパブリック関数
-	/**
-	* ライトの設定をする関数
-	* @param [in]	index_		ライトを設置する場所
-	* @param [in]	direction_	ワールド空間での光の指す方向
-	* @note direction_のデフォルト値は(0.0f, 0.0f, 1.0f)
-	* direction_は0.0fより大きな値を入れなければならない
-	*/
-	void Lighting(int index_, const D3DXVECTOR3& direction_ = { 0.0f, 0.0f, 1.0f });
-
-	/**全てのライトデータの解放関数*/
-	void ReleaseAllLight();
-
-	/**
-	* 一部のライトデータの解放関数
-	* @param [in] index_	解放する配列番号
-	*/
-	void ReleaseLight(int index_);
-
 private:
 	DirectX9*				m_pDirectX9;
 	InputDevice*			m_pInputDevice;
@@ -333,8 +291,6 @@ private:
 	VerticesManager*		m_pVerticesManager;
 	SoundFileManager*		m_pSoundFileManager;
 	XFileManager*			m_pXFileManager;
-	CameraSetting*			m_pCameraSetting;
-	LightSetting*			m_pLightsetting;
 };
 
 #pragma comment(lib, "dsound.lib" )
