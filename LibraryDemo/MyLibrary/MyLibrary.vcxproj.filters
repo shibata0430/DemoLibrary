@@ -64,6 +64,12 @@
     <Filter Include="OftenUseSystem\Light">
       <UniqueIdentifier>{d80fd5d6-f444-4fe1-a6d8-60f243361d0c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="OftenUseSystem\Define">
+      <UniqueIdentifier>{9b7642dd-0ba7-4d34-adae-4be432cbe0b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OftenUseSystem\Singleton">
+      <UniqueIdentifier>{3fb2c811-9ea9-4ce5-a08e-c3cab82f8cf1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Library.cpp">
@@ -183,10 +189,10 @@
       <Filter>OftenUseSystem\Light</Filter>
     </ClInclude>
     <ClInclude Include="Library\Define.h">
-      <Filter>OftenUseSystem</Filter>
+      <Filter>OftenUseSystem\Define</Filter>
     </ClInclude>
     <ClInclude Include="Library\Singleton.h">
-      <Filter>OftenUseSystem</Filter>
+      <Filter>OftenUseSystem\Singleton</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

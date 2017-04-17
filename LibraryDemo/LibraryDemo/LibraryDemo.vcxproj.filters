@@ -37,6 +37,9 @@
     <Filter Include="Main\Application\Scene\MainScene\CameraController">
       <UniqueIdentifier>{ee8e2305-8851-4ea8-92ce-11e620e4c7c1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Scene\MainScene\Field">
+      <UniqueIdentifier>{03ffd707-a112-44b4-9eea-ff03cabdc461}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
