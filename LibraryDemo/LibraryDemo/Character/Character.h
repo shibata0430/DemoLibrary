@@ -10,7 +10,6 @@
 #include <d3dx9.h>
 
 class Library;
-class CameraController;
 
 
 class Character
@@ -37,7 +36,6 @@ protected:
 
 protected:
 	Library&			m_rLibrary;
-	CameraController*	m_pCameraController;
 };
 
 #endif // !CHARACTER_H

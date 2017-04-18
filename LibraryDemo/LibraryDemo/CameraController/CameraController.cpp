@@ -80,3 +80,8 @@ void CameraController::TransformView()
 {
 	m_pCamera->TransformView(m_eyePos, m_lookAtPos, m_angle);
 }
+
+void CameraController::SetLookAtPos(const D3DXVECTOR3 & rplayerPos_)
+{
+	m_eyePos = rplayerPos_;
+}

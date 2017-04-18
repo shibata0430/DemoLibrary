@@ -28,6 +28,8 @@ public:
 	/**ƒrƒ…[•ÏŠ·ŠÖ”*/
 	void TransformView();
 
+	void SetLookAtPos(const D3DXVECTOR3& rplayerPos_);
+
 private:
 	Camera*			m_pCamera;
 	D3DXVECTOR3		m_eyePos;

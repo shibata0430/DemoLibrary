@@ -5,12 +5,11 @@
 */
 
 #include "Character.h"
-#include "../CameraController/CameraController.h"
+
 #include <Library.h>
 
 Character::Character() : 
-m_rLibrary(Library::Instace()),
-m_pCameraController(&CameraController::Instace())
+m_rLibrary(Library::Instace())
 {
 }
 
@@ -63,6 +62,4 @@ void Character::Transform3D(D3DXVECTOR3 localPos_, float angle_)
 	* 第二引数：ワールドトランスフォームをどの行列によって行うかを決めている
 	*/
 	m_rLibrary.GetDevice()->SetTransform(D3DTS_WORLD, &matWorld);
-
-	m_pCameraController->TransformView();
 }

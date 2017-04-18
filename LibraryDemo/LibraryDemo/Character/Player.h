@@ -10,6 +10,8 @@
 #include "Character.h"
 #include <d3dx9.h>
 
+class CameraController;
+
 class Player : public Character
 {
 public:
@@ -23,8 +25,10 @@ private:
 	void Move();
 
 private:
-	D3DXVECTOR3 m_playerPos;
-	float		m_rotateAngle;
+	D3DXVECTOR3			m_playerPos;
+	D3DXVECTOR3			m_lookAtPos;
+	float				m_rotateAngle;
+	CameraController*	m_pCameracontroller;
 };
 
 #endif // !PLAYER_H
