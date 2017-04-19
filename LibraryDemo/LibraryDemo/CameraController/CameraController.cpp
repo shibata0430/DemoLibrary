@@ -12,9 +12,8 @@
 
 namespace
 {
-	const float		CameraSpeed = 3.0f;					// カメラスピード
-	const float		ZoomSpeed = 3.0f;					// ズームスピード
-	const float		RollingSpeed = 10.f;				// 回転スピード
+	const float		zoomSpeed		= 1.0f;				// ズームスピード
+	const float		rollingSpeed	= 5.f;				// 回転スピード
 
 }
 
@@ -38,42 +37,45 @@ void CameraController::Control()
 {
 	D3DXMATRIX		matRotation; // 回転行列
 
+	// 上下左右の回転
 	if (m_rLibrary.CheckKey(DIK_W) == ON)
 	{
-		D3DXMatrixRotationX(&matRotation, D3DXToRadian(RollingSpeed));
+		D3DXMatrixRotationX(&matRotation, D3DXToRadian(rollingSpeed));
 		D3DXVECTOR3 pos = m_eyePos - m_lookAtPos;
 		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
 		m_eyePos = pos + m_lookAtPos;
 
 	}
-
-	// 下回転
 	if (m_rLibrary.CheckKey(DIK_S) == ON)
 	{
-		D3DXMatrixRotationX(&matRotation, D3DXToRadian(-RollingSpeed));
+		D3DXMatrixRotationX(&matRotation, D3DXToRadian(-rollingSpeed));
 		D3DXVECTOR3 pos = m_eyePos - m_lookAtPos;
 		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
 		m_eyePos = pos + m_lookAtPos;
 	}
-
-	// 右回転
 	if (m_rLibrary.CheckKey(DIK_D) == ON)
 	{
-		D3DXMatrixRotationY(&matRotation, D3DXToRadian(-RollingSpeed));
+		D3DXMatrixRotationY(&matRotation, D3DXToRadian(-rollingSpeed));
 		D3DXVECTOR3 pos = m_eyePos - m_lookAtPos;
 		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
 		m_eyePos = pos + m_lookAtPos;
 	}
-
-	// 左回転
 	if (m_rLibrary.CheckKey(DIK_A) == ON)
 	{
-		D3DXMatrixRotationY(&matRotation, D3DXToRadian(RollingSpeed));
+		D3DXMatrixRotationY(&matRotation, D3DXToRadian(rollingSpeed));
 		D3DXVECTOR3 pos = m_eyePos - m_lookAtPos;
 		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
 		m_eyePos = pos + m_lookAtPos;
 	}
-
+	// ズームインアウト
+	if (m_rLibrary.CheckKey(DIK_C) == ON)
+	{
+		m_angle += zoomSpeed;
+	}
+	if (m_rLibrary.CheckKey(DIK_V) == ON)
+	{
+		m_angle -= zoomSpeed;
+	}
 }
 
 void CameraController::TransformView()
