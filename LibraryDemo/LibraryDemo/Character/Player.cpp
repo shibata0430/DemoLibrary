@@ -45,24 +45,20 @@ void Player::Move()
 	if (m_rLibrary.CheckKey(DIK_LEFT) == ON)
 	{
 		m_playerPos.x -= moveSpeed;
-		m_lookAtPos.x -= moveSpeed;
 	}
 	if (m_rLibrary.CheckKey(DIK_RIGHT) == ON)
 	{
 		m_playerPos.x += moveSpeed;
-		m_lookAtPos.x += moveSpeed;
 	}
 	if (m_rLibrary.CheckKey(DIK_UP) == ON)
 	{
 		m_playerPos.z += moveSpeed;
-		m_lookAtPos.z += moveSpeed;
 	}
 	if (m_rLibrary.CheckKey(DIK_DOWN) == ON)
 	{
 		m_playerPos.z -= moveSpeed;
-		m_lookAtPos.z -= moveSpeed;
 	}
-	// ズームインアウト
+	// 回転
 	if (m_rLibrary.CheckKey(DIK_Z) == ON)
 	{
 		m_rotateAngle += rotateSpeed;
@@ -71,5 +67,4 @@ void Player::Move()
 	{
 		m_rotateAngle -= rotateSpeed;
 	}
-	m_pCameracontroller->SetLookAtPos(m_lookAtPos);
 }

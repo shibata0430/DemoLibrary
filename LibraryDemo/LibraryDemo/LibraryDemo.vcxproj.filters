@@ -28,9 +28,6 @@
     <Filter Include="Main\Application\Scene\Button">
       <UniqueIdentifier>{dc07c6ac-85d7-468e-9665-f4c93e1fad25}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Application\ResourceManager">
-      <UniqueIdentifier>{6a7cb086-0fb2-4ca3-9786-b731dfa420b0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Main\Application\Scene\MainScene\Character">
       <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
     </Filter>
@@ -69,9 +66,6 @@
     <ClCompile Include="Button\Button.cpp">
       <Filter>Main\Application\Scene\Button</Filter>
     </ClCompile>
-    <ClCompile Include="ResourceManager\ResourceManager.cpp">
-      <Filter>Main\Application\ResourceManager</Filter>
-    </ClCompile>
     <ClCompile Include="Scene\Logo.cpp">
       <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClCompile>
@@ -86,6 +80,21 @@
     </ClCompile>
     <ClCompile Include="CameraController\CameraController.cpp">
       <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
+    </ClCompile>
+    <ClCompile Include="Field\Field.cpp">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Field\FieldManager.cpp">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Field\Floor.cpp">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Field\Background.cpp">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClCompile>
+    <ClCompile Include="Character\Chips.cpp">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -113,9 +122,6 @@
     <ClInclude Include="Button\Button.h">
       <Filter>Main\Application\Scene\Button</Filter>
     </ClInclude>
-    <ClInclude Include="ResourceManager\ResourceManager.h">
-      <Filter>Main\Application\ResourceManager</Filter>
-    </ClInclude>
     <ClInclude Include="Scene\Logo.h">
       <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClInclude>
@@ -130,6 +136,21 @@
     </ClInclude>
     <ClInclude Include="CameraController\CameraController.h">
       <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
+    </ClInclude>
+    <ClInclude Include="Field\Field.h">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Field\FieldManager.h">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Field\Floor.h">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Field\Background.h">
+      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+    </ClInclude>
+    <ClInclude Include="Character\Chips.h">
+      <Filter>Main\Application\Scene\MainScene\Character</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
