@@ -26,7 +26,6 @@ private:
 
 private:
 	D3DXVECTOR3			m_playerPos;
-	D3DXVECTOR3			m_lookAtPos;
 	float				m_rotateAngle;
 	CameraController*	m_pCameracontroller;
 };

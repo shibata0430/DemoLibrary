@@ -6,34 +6,36 @@
 
 #include "CharacterManager.h"
 #include "Player.h"
+#include "Chips.h"
 #include <Library\DebugSystem.h>
 #include <Library\Define.h>
 
 CharacterManager::CharacterManager()
 {
 	m_pCharacter.emplace_back(New Player);
+	m_pCharacter.emplace_back(New Chips);
 }
 
 CharacterManager::~CharacterManager()
 {
 	for (auto itr = m_pCharacter.begin(); itr != m_pCharacter.end(); ++itr)
 	{
-		delete (*itr);
+		SafeDelete(*itr);
 	}
 }
 
 void CharacterManager::Control()
 {
-	for (auto itr = m_pCharacter.begin(); itr != m_pCharacter.end(); ++itr)
+	for (unsigned int i = 0; i < m_pCharacter.size(); i++)
 	{
-		(*itr)->Control();
+		m_pCharacter[i]->Control();
 	}
 }
 
 void CharacterManager::Draw()
 {
-	for (auto itr = m_pCharacter.begin(); itr != m_pCharacter.end(); ++itr)
+	for (unsigned int i = 0; i < m_pCharacter.size(); i++)
 	{
-		(*itr)->Draw();
+		m_pCharacter[i]->Draw();
 	}
 }

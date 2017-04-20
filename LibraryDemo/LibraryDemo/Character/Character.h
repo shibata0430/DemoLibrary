@@ -18,6 +18,7 @@ public:
 	enum MeshKind
 	{
 		PLAYER,
+		CHIPS
 	};
 
 public:

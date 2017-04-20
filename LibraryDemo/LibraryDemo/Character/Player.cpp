@@ -16,7 +16,6 @@ namespace
 
 Player::Player() : 
 m_playerPos(0.0f, 0.0f, 0.0f),
-m_lookAtPos(0.0f, 5.0f, -10.0f),
 m_rotateAngle(0.0f),
 m_pCameracontroller(&CameraController::Instace())
 {

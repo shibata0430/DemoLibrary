@@ -8,6 +8,7 @@
 #define CHIPS_H
 
 #include "Character.h"
+#include <d3dx9.h>
 
 class Chips : public Character
 {
@@ -17,6 +18,10 @@ public:
 
 	virtual void Control();
 	virtual void Draw();
+
+private:
+	D3DXVECTOR3 m_chipPos;
+	float		m_rotateAngle;
 };
 
 
