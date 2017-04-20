@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Floor.cpp
-* @breif	°‚ÌƒNƒ‰ƒXÀ‘•
+* @breif	åºŠã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

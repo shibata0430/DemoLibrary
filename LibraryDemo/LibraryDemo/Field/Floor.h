@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Floor.h
- * @breif	°‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	åºŠã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 

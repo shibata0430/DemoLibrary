@@ -1,6 +1,6 @@
-/**
+﻿/**
 * @file		Chips.cpp
-* @breif	����1��3D�I�u�W�F�N�g�̃`�b�v�X�̃N���X����
+* @breif	もう1つの3Dオブジェクトのチップスのクラス実装
 * @author	shibata
 */
 

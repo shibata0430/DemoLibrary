@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Application.cpp
- * @breif	ƒAƒvƒŠ‚ÌŠî“_‚ÌƒNƒ‰ƒXÀ‘•
+ * @breif	ã‚¢ãƒ—ãƒªã®åŸºç‚¹ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
  * @author	shibata
  */
 
@@ -16,7 +16,7 @@ m_rLibrary(Library::Instace()),
 m_pSceneTransition(New SceneTransition),
 m_isGameEnd(false)
 {
-	MyAssert(m_pSceneTransition, "NULL‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
+	MyAssert(m_pSceneTransition, "NULLãŒå…¥ã£ã¦ã„ã¾ã™");
 }
 
 Application::~Application()

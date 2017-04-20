@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Player.h
- * @breif	‘€ìƒLƒƒƒ‰‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	æ“ä½œã‚­ãƒ£ãƒ©ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 

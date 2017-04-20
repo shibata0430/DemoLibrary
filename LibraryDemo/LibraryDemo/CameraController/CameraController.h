@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	CameraController.h
- * @breif	ƒJƒƒ‰‚Ì§Œä‚ğ‚·‚éƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚«ãƒ¡ãƒ©ã®åˆ¶å¾¡ã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -22,10 +22,10 @@ private:
 	~CameraController();
 
 public:
-	/**ƒJƒƒ‰§ŒäŠÖ”*/
+	/**ã‚«ãƒ¡ãƒ©åˆ¶å¾¡é–¢æ•°*/
 	void Control();
 
-	/**ƒrƒ…[•ÏŠ·ŠÖ”*/
+	/**ãƒ“ãƒ¥ãƒ¼å¤‰æ›é–¢æ•°*/
 	void TransformView();
 
 	void SetLookAtPos(const D3DXVECTOR3& rplayerPos_);

@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	TitleScene.h
- * @breif	ƒ^ƒCƒgƒ‹ƒV[ƒ“‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -12,17 +12,17 @@
 class TitleScene : public Scene
 {
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	TitleScene();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	virtual ~TitleScene();
 
 	/**
-	 * ‘€ìŠÖ”
-	 * @retval	‘JˆÚæ‚ÌƒV[ƒ“ID
+	 * æ“ä½œé–¢æ•°
+	 * @retval	é·ç§»å…ˆã®ã‚·ãƒ¼ãƒ³ID
 	 */
 	virtual Scene::ID Control();
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	virtual void Draw();
 };
 

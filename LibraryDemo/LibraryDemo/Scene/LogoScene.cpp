@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		LogoScene.cpp
-* @breif	ƒƒSƒV[ƒ“‚ÌƒNƒ‰ƒXÀ‘•
+* @breif	ãƒ­ã‚´ã‚·ãƒ¼ãƒ³ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

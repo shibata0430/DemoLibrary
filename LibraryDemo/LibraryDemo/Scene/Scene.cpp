@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Scene.cpp
-* @breif	ŠeƒV[ƒ“‚ÌeƒNƒ‰ƒXÀ‘•
+* @breif	å„ã‚·ãƒ¼ãƒ³ã®è¦ªã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

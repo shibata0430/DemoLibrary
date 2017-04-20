@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Background.h
- * @breif	”wŒi‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	èƒŒæ™¯ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 

@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Background.cpp
-* @breif	”wŒi‚ÌƒNƒ‰ƒXÀ‘•
+* @breif	èƒŒæ™¯ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

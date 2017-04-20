@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	SceneFactory.h
- * @breif	ƒV[ƒ“‚Ì¶¬ƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚·ãƒ¼ãƒ³ã®ç”Ÿæˆã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -21,22 +21,22 @@ private:
 	friend Singleton<SceneFactory>;
 
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @attntion Singletonƒpƒ^[ƒ“‚ğg—p‚µ‚Ä‚¢‚é‚½‚ßprivate‚É
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @attntion Singletonãƒ‘ã‚¿ãƒ¼ãƒ³ã‚’ä½¿ç”¨ã—ã¦ã„ã‚‹ãŸã‚privateã«
 	 */
 	SceneFactory();
 
 	/**
-	* ƒfƒXƒgƒ‰ƒNƒ^
-	* @attntion ƒRƒ“ƒXƒgƒ‰ƒNƒ^‚Æ“¯—l‚Ì——R
+	* ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	* @attntion ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿ã¨åŒæ§˜ã®ç†ç”±
 	*/
 	virtual ~SceneFactory();
 
 public:
 	/**
-	 * ŠeƒV[ƒ“‚Ì¶¬ŠÖ”
-	 * @param [in] sceneID_	Ÿ‚ÌƒV[ƒ“‚h‚c
-	 * @retrun				ƒAƒbƒvƒLƒƒƒXƒg‚µ‚½ƒCƒ“ƒXƒ^ƒ“ƒX
+	 * å„ã‚·ãƒ¼ãƒ³ã®ç”Ÿæˆé–¢æ•°
+	 * @param [in] sceneID_	æ¬¡ã®ã‚·ãƒ¼ãƒ³ï¼©ï¼¤
+	 * @retrun				ã‚¢ãƒƒãƒ—ã‚­ãƒ£ã‚¹ãƒˆã—ãŸã‚¤ãƒ³ã‚¹ã‚¿ãƒ³ã‚¹
 	 */
 	Scene* CreateScene(Scene::ID sceneID_);	
 };

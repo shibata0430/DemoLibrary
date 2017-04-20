@@ -1,4 +1,4 @@
-/**
+﻿/**
  * @file	Singleton.h
  * @breif	
  * @author	shibata

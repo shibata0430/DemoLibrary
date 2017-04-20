@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		CharacterManager.cpp
-* @breif	ƒLƒƒƒ‰ƒNƒ^[‚ğŠÇ—‚µ‚Ä‚¢‚éƒNƒ‰ƒXÀ‘•
+* @breif	ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’ç®¡ç†ã—ã¦ã„ã‚‹ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

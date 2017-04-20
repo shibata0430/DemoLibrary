@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	SceneTransition.cpp
- * @breif	ƒV[ƒ“‚ğ‘JˆÚ‚·‚éƒNƒ‰ƒXÀ‘•
+ * @breif	ã‚·ãƒ¼ãƒ³ã‚’é·ç§»ã™ã‚‹ã‚¯ãƒ©ã‚¹å®Ÿè£…
  * @author	shibata
  */
 
@@ -20,7 +20,7 @@ m_isControlEnd(false)
 
 SceneTransition::~SceneTransition()
 {
-	SafeDelete(m_pScene);	// Factory‚ÅŠeƒV[ƒ“‚ğ“®“I‚ÉŠm•Û‚µ‚Ä‚¢‚é‚Ì‚ÅŠJ•ú‚µ‚Ä‚¢‚é
+	SafeDelete(m_pScene);	// Factoryã§å„ã‚·ãƒ¼ãƒ³ã‚’å‹•çš„ã«ç¢ºä¿ã—ã¦ã„ã‚‹ã®ã§é–‹æ”¾ã—ã¦ã„ã‚‹
 }
 
 bool SceneTransition::Control()

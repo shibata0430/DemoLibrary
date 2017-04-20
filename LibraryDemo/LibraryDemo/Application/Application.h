@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Application.h
- * @breif	ƒAƒvƒŠ‚ÌŠî“_‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚¢ãƒ—ãƒªã®åŸºç‚¹ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -13,22 +13,22 @@ class SceneTransition;
 class Application
 {
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	Application();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~Application();
 
 	/**
-	 * ˆ—‚ÌŠJnŠÖ”
-	 * @retval true		ƒvƒƒOƒ‰ƒ€‚ğI—¹
-	 * @retval false	ƒvƒƒOƒ‰ƒ€‚ğŒp‘±
+	 * å‡¦ç†ã®é–‹å§‹é–¢æ•°
+	 * @retval true		ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’çµ‚äº†
+	 * @retval false	ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’ç¶™ç¶š
 	 */
 	bool Run();
 
 private:
-	Library&			m_rLibrary;				// ©ìƒ‰ƒCƒuƒ‰ƒŠƒNƒ‰ƒX
-	SceneTransition*	m_pSceneTransition;		// ƒV[ƒ“‘JˆÚ‚ğ‚·‚éƒNƒ‰ƒX
-	bool				m_isGameEnd;			// ƒQ[ƒ€ã‚Å‘€ì‚ªI—¹‚µ‚½‚©
+	Library&			m_rLibrary;				// è‡ªä½œãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚¯ãƒ©ã‚¹
+	SceneTransition*	m_pSceneTransition;		// ã‚·ãƒ¼ãƒ³é·ç§»ã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹
+	bool				m_isGameEnd;			// ã‚²ãƒ¼ãƒ ä¸Šã§æ“ä½œãŒçµ‚äº†ã—ãŸã‹
 };
 
 #endif // !APPLICATION_H

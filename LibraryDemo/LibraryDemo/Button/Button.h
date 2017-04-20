@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Button.h
- * @breif	ì•i‚Åo‚Ä‚­‚éƒ{ƒ^ƒ“ŠÖŒW‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ä½œå“ã§å‡ºã¦ãã‚‹ãƒœã‚¿ãƒ³é–¢ä¿‚ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -11,17 +11,17 @@ class Button
 {
 public:
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param [in] posX_	‚w²‚Ì•\¦ˆÊ’u
-	 * @param [in] posY_	‚x²‚Ì•\¦ˆÊ’u
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param [in] posX_	ï¼¸è»¸ã®è¡¨ç¤ºä½ç½®
+	 * @param [in] posY_	ï¼¹è»¸ã®è¡¨ç¤ºä½ç½®
 	 */
 	Button(int posX_, int posY_);
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~Button();
 
 private:
-	int m_buttonPosX;	// ƒ{ƒ^ƒ“‚Ì‚w‚Ì•\¦ˆÊ’u
-	int m_butoonPosY;	// ƒ{ƒ^ƒ“‚Ì‚x‚Ì•\¦ˆÊ’u
+	int m_buttonPosX;	// ãƒœã‚¿ãƒ³ã®ï¼¸ã®è¡¨ç¤ºä½ç½®
+	int m_butoonPosY;	// ãƒœã‚¿ãƒ³ã®ï¼¹ã®è¡¨ç¤ºä½ç½®
 };
 
 #endif // !BUTTON_H

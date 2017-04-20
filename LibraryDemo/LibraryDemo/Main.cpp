@@ -1,4 +1,4 @@
-#include <Library.h>
+﻿#include <Library.h>
 #include <Library\DebugSystem.h>
 #include <Library\Define.h>
 #include "Application\Application.h"

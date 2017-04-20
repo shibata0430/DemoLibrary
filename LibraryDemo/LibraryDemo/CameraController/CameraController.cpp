@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		CameraController.cpp
-* @breif	ƒJƒƒ‰‚Ì§Œä‚ğ‚·‚éƒNƒ‰ƒXÀ‘•
+* @breif	ã‚«ãƒ¡ãƒ©ã®åˆ¶å¾¡ã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 
@@ -12,8 +12,8 @@
 
 namespace
 {
-	const float		zoomSpeed		= 1.0f;				// ƒY[ƒ€ƒXƒs[ƒh
-	const float		rollingSpeed	= 5.f;				// ‰ñ“]ƒXƒs[ƒh
+	const float		zoomSpeed		= 1.0f;				// ã‚ºãƒ¼ãƒ ã‚¹ãƒ”ãƒ¼ãƒ‰
+	const float		rollingSpeed	= 5.f;				// å›è»¢ã‚¹ãƒ”ãƒ¼ãƒ‰
 
 }
 
@@ -24,7 +24,7 @@ m_eyePos(0.0f, 5.0f, -10.0f),
 m_lookAtPos(0.0f, 0.0f, 1.0f),
 m_angle(50.0f)
 {
-	MyAssert(m_pCamera, "NULL‚ª“ü‚Á‚Ä‚¢‚é");
+	MyAssert(m_pCamera, "NULLãŒå…¥ã£ã¦ã„ã‚‹");
 	m_pCamera->InputWindowSize(m_rLibrary.GetWinWidth(), m_rLibrary.GetWinHeight());
 }
 
@@ -35,9 +35,9 @@ CameraController::~CameraController()
 
 void CameraController::Control()
 {
-	D3DXMATRIX		matRotation; // ‰ñ“]s—ñ
+	D3DXMATRIX		matRotation; // å›è»¢è¡Œåˆ—
 
-	// ã‰º¶‰E‚Ì‰ñ“]
+	// ä¸Šä¸‹å·¦å³ã®å›è»¢
 	if (m_rLibrary.CheckKey(DIK_W) == ON)
 	{
 		D3DXMatrixRotationX(&matRotation, D3DXToRadian(rollingSpeed));
@@ -67,7 +67,7 @@ void CameraController::Control()
 		D3DXVec3TransformCoord(&pos, &pos, &matRotation);
 		m_eyePos = pos + m_lookAtPos;
 	}
-	// ƒY[ƒ€ƒCƒ“ƒAƒEƒg
+	// ã‚ºãƒ¼ãƒ ã‚¤ãƒ³ã‚¢ã‚¦ãƒˆ
 	if (m_rLibrary.CheckKey(DIK_C) == ON)
 	{
 		m_angle += zoomSpeed;

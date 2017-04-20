@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		Player.cpp
-* @breif	‘€ìƒLƒƒƒ‰‚ÌƒNƒ‰ƒXÀ‘•
+* @breif	æ“ä½œã‚­ãƒ£ãƒ©ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 
@@ -41,7 +41,7 @@ void Player::Draw()
 
 void Player::Move()
 {
-	// ã‰º¶‰E‚ÌˆÚ“®
+	// ä¸Šä¸‹å·¦å³ã®ç§»å‹•
 	if (m_rLibrary.CheckKey(DIK_LEFT) == ON)
 	{
 		m_playerPos.x -= moveSpeed;
@@ -58,7 +58,7 @@ void Player::Move()
 	{
 		m_playerPos.z -= moveSpeed;
 	}
-	// ‰ñ“]
+	// å›è»¢
 	if (m_rLibrary.CheckKey(DIK_Z) == ON)
 	{
 		m_rotateAngle += rotateSpeed;

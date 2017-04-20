@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		SceneFactory.cpp
-* @breif	ƒV[ƒ“‚Ì¶¬ƒNƒ‰ƒXÀ‘•
+* @breif	ã‚·ãƒ¼ãƒ³ã®ç”Ÿæˆã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Scene.h
- * @breif	ŠeƒV[ƒ“‚ÌeƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	å„ã‚·ãƒ¼ãƒ³ã®è¦ªã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -12,7 +12,7 @@ class Library;
 class Scene
 {
 public:
-	// ƒvƒƒOƒ‰ƒ€ã‚Åg—p‚·‚éƒV[ƒ“‚Ìí—Ş
+	// ãƒ—ãƒ­ã‚°ãƒ©ãƒ ä¸Šã§ä½¿ç”¨ã™ã‚‹ã‚·ãƒ¼ãƒ³ã®ç¨®é¡
 	enum ID
 	{
 		LOGO_SCENE,
@@ -23,24 +23,24 @@ public:
 
 public:
 	/**
-	 * ƒRƒ“ƒXƒgƒ‰ƒNƒ^
-	 * @param [in] sceneID_	”h¶ƒNƒ‰ƒX¶¬‚ÌÛ‚ÉƒV[ƒ“‚h‚c‚ğ‚»‚ÌƒNƒ‰ƒX‚Æˆê’v‚³‚¹‚é‚½‚ß
-	 * @note	explicit‚ÅˆÃ–Ù‚Ì•ÏŠ·‚ğ‹Ö~‚É‚µ‚Ä‚¢‚é
+	 * ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
+	 * @param [in] sceneID_	æ´¾ç”Ÿã‚¯ãƒ©ã‚¹ç”Ÿæˆã®éš›ã«ã‚·ãƒ¼ãƒ³ï¼©ï¼¤ã‚’ãã®ã‚¯ãƒ©ã‚¹ã¨ä¸€è‡´ã•ã›ã‚‹ãŸã‚
+	 * @note	explicitã§æš—é»™ã®å¤‰æ›ã‚’ç¦æ­¢ã«ã—ã¦ã„ã‚‹
 	 */
 	explicit Scene(Scene::ID sceneID_);
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	virtual ~Scene();
 
 	/**
-	 * ‘€ìŠÖ”
-	 * @retval	‘JˆÚæ‚ÌƒV[ƒ“ID
+	 * æ“ä½œé–¢æ•°
+	 * @retval	é·ç§»å…ˆã®ã‚·ãƒ¼ãƒ³ID
 	 */
 	virtual Scene::ID Control() = 0;
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	virtual void Draw() = 0;
 
 protected:
-	Library&	m_rLibrary;	// ©ìƒ‰ƒCƒuƒ‰ƒŠƒNƒ‰ƒX
+	Library&	m_rLibrary;	// è‡ªä½œãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚¯ãƒ©ã‚¹
 	float		m_width;
 	float		m_height;
 	float		m_posX;

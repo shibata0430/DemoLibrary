@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		MainScene.cpp
-* @breif	ƒƒCƒ“ƒV[ƒ“‚ÌƒNƒ‰ƒXŽÀ‘•
+* @breif	ãƒ¡ã‚¤ãƒ³ã‚·ãƒ¼ãƒ³ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 
@@ -17,8 +17,8 @@ m_pCharacterManager(New CharacterManager),
 m_pCameraController(&CameraController::Instace()),
 m_pLight(New Light)
 {
-	MyAssert(m_pCharacterManager, "NULL‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
-	MyAssert(m_pLight, "NULL‚ª“ü‚Á‚Ä‚¢‚Ü‚·");
+	MyAssert(m_pCharacterManager, "NULLãŒå…¥ã£ã¦ã„ã¾ã™");
+	MyAssert(m_pLight, "NULLãŒå…¥ã£ã¦ã„ã¾ã™");
 	m_pLight->Lighting();
 }
 

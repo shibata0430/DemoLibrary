@@ -1,6 +1,6 @@
-/**
+﻿/**
 * @file		Field.cpp
-* @breif	�t�B�[���h�Ɋ֌W����N���X�̐e�N���X����
+* @breif	フィールドに関係するクラスの親クラス実装
 * @author	shibata
 */
 

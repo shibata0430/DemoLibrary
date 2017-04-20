@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file	Chips.h
- * @breif	����1��3D�I�u�W�F�N�g�̃`�b�v�X�̃N���X�w�b�_
+ * @breif	もう1つの3Dオブジェクトのチップスのクラスヘッダ
  * @author	shibata
  */
 

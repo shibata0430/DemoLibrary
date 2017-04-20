@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Light.cpp
- * @breif	ƒ‰ƒCƒg‚ÌÝ’è‚ð‚·‚éƒNƒ‰ƒXŽÀ‘•
+ * @breif	ãƒ©ã‚¤ãƒˆã®è¨­å®šã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹å®Ÿè£…
  * @author	shibata
  */
 

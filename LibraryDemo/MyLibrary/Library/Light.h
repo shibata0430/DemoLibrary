@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Light.h
- * @breif	ƒ‰ƒCƒg‚Ìİ’è‚ğ‚·‚éƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ãƒ©ã‚¤ãƒˆã®è¨­å®šã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -12,22 +12,22 @@
 class Light
 {
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	Light();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~Light();
 
 	/**
-	 * ƒ‰ƒCƒg‚Ìİ’è‚ğ‚·‚éŠÖ”
-	 * @param [in] direction_ ƒ[ƒ‹ƒh‹óŠÔ‚Å‚ÌŒõ‚Ìw‚·•ûŒü
-	 * @note direction_‚ÌƒfƒtƒHƒ‹ƒg’l‚Í(0.0f, 0.0f, 1.0f)
-	 * @attention direction_‚Í0.0f‚æ‚è‘å‚«‚È’l‚ğ“ü‚ê‚È‚¯‚ê‚Î‚È‚ç‚È‚¢
+	 * ãƒ©ã‚¤ãƒˆã®è¨­å®šã‚’ã™ã‚‹é–¢æ•°
+	 * @param [in] direction_ ãƒ¯ãƒ¼ãƒ«ãƒ‰ç©ºé–“ã§ã®å…‰ã®æŒ‡ã™æ–¹å‘
+	 * @note direction_ã®ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆå€¤ã¯(0.0f, 0.0f, 1.0f)
+	 * @attention direction_ã¯0.0fã‚ˆã‚Šå¤§ããªå€¤ã‚’å…¥ã‚Œãªã‘ã‚Œã°ãªã‚‰ãªã„
 	 */
 	void Lighting(const D3DXVECTOR3& direction_ = {0.0f, 0.0f, 1.0f});
 
 private:
-	D3DLIGHT9				m_light;			//!< ƒ‰ƒCƒgİ’è‚ğ‚·‚é\‘¢‘Ì
-	LPDIRECT3DDEVICE9		m_pGraphicsdevice;	//!< DirectX9‚©‚çæ‚Á‚Ä‚«‚½ƒfƒoƒCƒX
+	D3DLIGHT9				m_light;			//!< ãƒ©ã‚¤ãƒˆè¨­å®šã‚’ã™ã‚‹æ§‹é€ ä½“
+	LPDIRECT3DDEVICE9		m_pGraphicsdevice;	//!< DirectX9ã‹ã‚‰å–ã£ã¦ããŸãƒ‡ãƒã‚¤ã‚¹
 };
 
 #endif // !LIGHT_H

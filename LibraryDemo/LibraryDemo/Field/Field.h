@@ -1,6 +1,6 @@
-/**
+﻿/**
  * @file	Field.h
- * @breif	�t�B�[���h�Ɋ֌W����N���X�̐e�N���X�w�b�_
+ * @breif	フィールドに関係するクラスの親クラスヘッダ
  * @author	shibata
  */
 

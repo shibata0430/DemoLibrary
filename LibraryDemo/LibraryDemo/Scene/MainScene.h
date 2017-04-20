@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	MainScene.h
- * @breif	ƒƒCƒ“ƒV[ƒ“‚ÌƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ãƒ¡ã‚¤ãƒ³ã‚·ãƒ¼ãƒ³ã®ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -16,17 +16,17 @@ class Light;
 class MainScene : public Scene
 {
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	MainScene();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	virtual ~MainScene();
 
 	/**
-	 * ‘€ìŠÖ”
-	 * @retval	‘JˆÚæ‚ÌƒV[ƒ“ID
+	 * æ“ä½œé–¢æ•°
+	 * @retval	é·ç§»å…ˆã®ã‚·ãƒ¼ãƒ³ID
 	 */
 	virtual Scene::ID Control();
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	virtual void Draw();
 
 private:

@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	SceneTransition.h
- * @breif	ƒV[ƒ“‚ğ‘JˆÚ‚·‚éƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚·ãƒ¼ãƒ³ã‚’é·ç§»ã™ã‚‹ã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -13,35 +13,35 @@ class SceneFactory;
 class SceneTransition
 {
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	SceneTransition();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~SceneTransition();
 
 	/**
-	 * ‘€ìŠÖ”
-	 * @retval true		‘€ìI—¹
-	 * @retval false	‘€ìŒp‘±
+	 * æ“ä½œé–¢æ•°
+	 * @retval true		æ“ä½œçµ‚äº†
+	 * @retval false	æ“ä½œç¶™ç¶š
 	 */
 	bool Control();
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	void Render();
 
 public:
-	// ƒV[ƒ“‚ÌŒ»İ‚Ìó‘Ô
+	// ã‚·ãƒ¼ãƒ³ã®ç¾åœ¨ã®çŠ¶æ…‹
 	enum State
 	{
-		CREATE,		// ¶¬ó‘Ô
-		RUN,		// ˆ—ó‘Ô
-		RELEASE		// ŠJ•úó‘Ô
+		CREATE,		// ç”ŸæˆçŠ¶æ…‹
+		RUN,		// å‡¦ç†çŠ¶æ…‹
+		RELEASE		// é–‹æ”¾çŠ¶æ…‹
 	};
 
 private:
-	SceneFactory*	m_pSceneFactory;	// ƒV[ƒ“‚Ì¶¬‚ğ‚·‚éƒNƒ‰ƒX
-	Scene*			m_pScene;			// ƒV[ƒ“‚Ì’ŠÛƒNƒ‰ƒX
-	Scene::ID		m_nextSceneID;		// Ÿ‚É‘@ˆÛ‚·‚éƒV[ƒ“‚h‚c
-	State			m_state;			// Œ»İ‚ÌƒV[ƒ“‚Ìó‘Ô
-	bool			m_isControlEnd;		// ‘€ì‚ªI—¹‚µ‚½‚©‚Ç‚¤‚©
+	SceneFactory*	m_pSceneFactory;	// ã‚·ãƒ¼ãƒ³ã®ç”Ÿæˆã‚’ã™ã‚‹ã‚¯ãƒ©ã‚¹
+	Scene*			m_pScene;			// ã‚·ãƒ¼ãƒ³ã®æŠ½è±¡ã‚¯ãƒ©ã‚¹
+	Scene::ID		m_nextSceneID;		// æ¬¡ã«ç¹Šç¶­ã™ã‚‹ã‚·ãƒ¼ãƒ³ï¼©ï¼¤
+	State			m_state;			// ç¾åœ¨ã®ã‚·ãƒ¼ãƒ³ã®çŠ¶æ…‹
+	bool			m_isControlEnd;		// æ“ä½œãŒçµ‚äº†ã—ãŸã‹ã©ã†ã‹
 };
 
 #endif // !SCENETRANSITION_H

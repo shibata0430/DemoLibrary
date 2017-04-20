@@ -1,6 +1,6 @@
-/**
+ï»¿/**
 * @file		TitleScene.cpp
-* @breif	ƒ^ƒCƒgƒ‹ƒV[ƒ“‚ÌƒNƒ‰ƒXÀ‘•
+* @breif	ã‚¿ã‚¤ãƒˆãƒ«ã‚·ãƒ¼ãƒ³ã®ã‚¯ãƒ©ã‚¹å®Ÿè£…
 * @author	shibata
 */
 

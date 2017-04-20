@@ -1,6 +1,6 @@
-/**
+ï»¿/**
  * @file	Character.h
- * @breif	ƒLƒƒƒ‰ƒNƒ^[‚ÌeƒNƒ‰ƒXƒwƒbƒ_
+ * @breif	ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®è¦ªã‚¯ãƒ©ã‚¹ãƒ˜ãƒƒãƒ€
  * @author	shibata
  */
 
@@ -21,14 +21,14 @@ public:
 	};
 
 public:
-	/**ƒRƒ“ƒXƒgƒ‰ƒNƒ^*/
+	/**ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	Character();
-	/**ƒfƒXƒgƒ‰ƒNƒ^*/
+	/**ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿*/
 	~Character();
 
-	/**‘€ìŠÖ”*/
+	/**æ“ä½œé–¢æ•°*/
 	virtual void Control() = 0;
-	/**•`‰æŠÖ”*/
+	/**æç”»é–¢æ•°*/
 	virtual void Draw() = 0;
 
 protected:
