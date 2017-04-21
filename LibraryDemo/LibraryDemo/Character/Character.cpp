@@ -17,7 +17,7 @@ Character::~Character()
 {
 }
 
-void Character::Transform3D(D3DXVECTOR3 localPos_, float angle_)
+void Character::Transform3D(const D3DXVECTOR3& localPos_, float angle_)
 {
 	D3DXMATRIXA16 matWorld;
 	D3DXMATRIXA16 matPosition;

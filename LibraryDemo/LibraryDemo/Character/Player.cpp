@@ -7,6 +7,7 @@
 #include "Player.h"
 #include <Library.h>
 #include "../CameraController/CameraController.h"
+#include "../ObjectManager/ObjectManager.h"
 
 namespace
 {
@@ -19,7 +20,7 @@ m_playerPos(0.0f, 0.0f, 0.0f),
 m_rotateAngle(0.0f),
 m_pCameracontroller(&CameraController::Instace())
 {
-	m_rLibrary.LoadXFile(Character::MeshKind::PLAYER, "Resource/Texture/Human.x");
+	m_rLibrary.LoadXFile(ObjectManager::MeshKind::PLAYER, "Resource/Texture/Human.x");
 }
 
 Player::~Player()
@@ -35,7 +36,7 @@ void Player::Draw()
 {
 	Transform3D(m_playerPos, m_rotateAngle);
 	m_pCameracontroller->TransformView();
-	m_rLibrary.DrawXFile(Character::MeshKind::PLAYER);
+	m_rLibrary.DrawXFile(ObjectManager::MeshKind::PLAYER);
 }
 
 void Player::Move()

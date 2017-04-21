@@ -15,13 +15,6 @@ class Library;
 class Character
 {
 public:
-	enum MeshKind
-	{
-		PLAYER,
-		CHIPS
-	};
-
-public:
 	/**コンストラクタ*/
 	Character();
 	/**デストラクタ*/
@@ -33,7 +26,7 @@ public:
 	virtual void Draw() = 0;
 
 protected:
-	void Transform3D(D3DXVECTOR3 localPos_, float angle_);
+	void Transform3D(const D3DXVECTOR3& localPos_, float angle_);
 
 protected:
 	Library&			m_rLibrary;

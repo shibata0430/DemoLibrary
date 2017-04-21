@@ -18,9 +18,9 @@ CharacterManager::CharacterManager()
 
 CharacterManager::~CharacterManager()
 {
-	for (auto itr = m_pCharacter.begin(); itr != m_pCharacter.end(); ++itr)
+	for (unsigned int i = 0; i < m_pCharacter.size(); i++)
 	{
-		SafeDelete(*itr);
+		SafeDelete(m_pCharacter[i]);
 	}
 }
 
