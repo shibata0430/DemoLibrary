@@ -19,7 +19,7 @@ namespace
 
 CameraController::CameraController() : 
 m_pCamera(New Camera),
-m_rLibrary(Library::Instace()),
+m_rLibrary(Library::Instance()),
 m_eyePos(0.0f, 5.0f, -10.0f),
 m_lookAtPos(0.0f, 0.0f, 1.0f),
 m_angle(50.0f)

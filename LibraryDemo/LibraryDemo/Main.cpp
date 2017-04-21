@@ -13,7 +13,7 @@ namespace
 
 int WINAPI WinMain(HINSTANCE, HINSTANCE, LPSTR, INT)
 {
-	Library*		pLibrary = &Library::Instace();
+	Library*		pLibrary = &Library::Instance();
 	DebugSystem*	pDebugSystem = New DebugSystem;
 	Application*	pApplication = NULL;
 

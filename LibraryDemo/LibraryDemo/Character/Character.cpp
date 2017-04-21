@@ -9,7 +9,7 @@
 #include <Library.h>
 
 Character::Character() : 
-m_rLibrary(Library::Instace())
+m_rLibrary(Library::Instance())
 {
 }
 

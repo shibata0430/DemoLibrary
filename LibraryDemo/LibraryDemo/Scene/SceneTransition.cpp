@@ -10,7 +10,7 @@
 #include <Library\Define.h>
 
 SceneTransition::SceneTransition() :
-m_pSceneFactory(&SceneFactory::Instace()),
+m_pSceneFactory(&SceneFactory::Instance()),
 m_pScene(NULL),
 m_nextSceneID(Scene::ID::MAIN_SCENE),
 m_state(CREATE),

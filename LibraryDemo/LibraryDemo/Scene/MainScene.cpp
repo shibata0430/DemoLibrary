@@ -10,11 +10,12 @@
 #include "../ObjectManager/ObjectManager.h"
 #include "../CameraController/CameraController.h"
 #include <Library\Light.h>
+#include <Library.h>
 
 MainScene::MainScene() : 
 Scene(Scene::ID::MAIN_SCENE),
 m_pObjectManager(New ObjectManager),
-m_pCameraController(&CameraController::Instace()),
+m_pCameraController(&CameraController::Instance()),
 m_pLight(New Light({0.0f, 1.5f, 1.5f}))
 {
 	MyAssert(m_pObjectManager, "NULLが入っています");
@@ -26,6 +27,7 @@ MainScene::~MainScene()
 {
 	SafeDelete(m_pObjectManager);
 	SafeDelete(m_pLight);
+	m_rLibrary.ReleaseAllXFile();		// メインシーンで使っているXファイルのメモリの開放
 }
 
 Scene::ID MainScene::Control()

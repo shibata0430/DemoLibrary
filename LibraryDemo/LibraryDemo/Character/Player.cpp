@@ -18,9 +18,9 @@ namespace
 Player::Player() : 
 m_playerPos(0.0f, 0.0f, 0.0f),
 m_rotateAngle(0.0f),
-m_pCameracontroller(&CameraController::Instace())
+m_pCameracontroller(&CameraController::Instance())
 {
-	m_rLibrary.LoadXFile(ObjectManager::MeshKind::PLAYER, "Resource/Texture/Human.x");
+	m_rLibrary.LoadXFile(ObjectManager::Kind::PLAYER, "Resource/Texture/Human.x");
 }
 
 Player::~Player()
@@ -36,7 +36,7 @@ void Player::Draw()
 {
 	Transform3D(m_playerPos, m_rotateAngle);
 	m_pCameracontroller->TransformView();
-	m_rLibrary.DrawXFile(ObjectManager::MeshKind::PLAYER);
+	m_rLibrary.DrawXFile(ObjectManager::Kind::PLAYER);
 }
 
 void Player::Move()

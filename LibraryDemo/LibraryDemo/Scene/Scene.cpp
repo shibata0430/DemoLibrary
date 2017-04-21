@@ -8,7 +8,7 @@
 #include <Library.h>
 
 Scene::Scene(Scene::ID sceneID_) :
-m_rLibrary(Library::Instace())
+m_rLibrary(Library::Instance())
 {
 
 }

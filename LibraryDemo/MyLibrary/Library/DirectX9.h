@@ -8,27 +8,18 @@
 #define DIRECTX9_H
 
 #include <d3dx9.h>
+#include "Singleton.h"
 
-class DirectX9
+class DirectX9 : public Singleton<DirectX9>
 {
 private:
+	friend Singleton<DirectX9>;
 	/**コンストラクタ*/
 	DirectX9();
+	/**デストラクタ*/
+	virtual ~DirectX9();
 
 public:
-	/**デストラクタ*/
-	~DirectX9();
-
-	/**
-	 * DirectX9のインスタンス取得関数
-	 * return	directX9	DirectX9のインスタンス
-	 */
-	static DirectX9& Instance()
-	{
-		static DirectX9 directX9;
-		return directX9;
-	}
-
 	/**
 	 * DirectXの初期化関数
 	 * @param [in]	hWnd_			ウィンドウハンドル

@@ -12,7 +12,7 @@
 
 
 Application::Application() : 
-m_rLibrary(Library::Instace()),
+m_rLibrary(Library::Instance()),
 m_pSceneTransition(New SceneTransition),
 m_isGameEnd(false)
 {
