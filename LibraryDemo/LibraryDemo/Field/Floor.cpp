@@ -11,7 +11,7 @@
 Floor::Floor() : 
 m_floorPos(2.0f, -5.0f, 0.0f)
 {
-	m_rLibrary.LoadXFile(ObjectManager::MeshKind::FLOOR, "Resource/Texture/Ground.x");
+	m_rLibrary.LoadXFile(ObjectManager::Kind::FLOOR, "Resource/Texture/Ground.x");
 }
 
 Floor::~Floor()
@@ -20,5 +20,5 @@ Floor::~Floor()
 
 void Floor::Draw()
 {
-	m_rLibrary.DrawXFile(ObjectManager::MeshKind::FLOOR);
+	m_rLibrary.DrawXFile(ObjectManager::Kind::FLOOR);
 }

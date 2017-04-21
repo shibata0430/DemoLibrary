@@ -8,7 +8,7 @@
 #include <Library.h>
 
 Field::Field() : 
-m_rLibrary(Library::Instace())
+m_rLibrary(Library::Instance())
 {
 }
 
