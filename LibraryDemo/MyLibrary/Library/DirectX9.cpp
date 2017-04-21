@@ -113,9 +113,6 @@ void DirectX9::DrawEnd()
 void DirectX9::Init3DDraw()
 {
 	m_pD3Device->SetRenderState(D3DRS_ZENABLE, TRUE);			// Zバッファー処理を有効に(3D)
-	m_pD3Device->SetRenderState(D3DRS_LIGHTING, TRUE);			// ライトを有効に
-	m_pD3Device->SetRenderState(D3DRS_AMBIENT, 0x0000000000);	// アンビエントライト(環境光)を設定
-	m_pD3Device->SetRenderState(D3DRS_SPECULARENABLE, TRUE);	// スペキュラ(鏡面反射)を有効に
 	m_pD3Device->SetRenderState(D3DRS_CULLMODE, D3DCULL_CCW);	// カリングする
 }
 
