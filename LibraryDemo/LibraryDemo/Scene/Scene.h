@@ -41,10 +41,6 @@ public:
 
 protected:
 	Library&	m_rLibrary;	// 自作ライブラリクラス
-	float		m_width;
-	float		m_height;
-	float		m_posX;
-	float		m_posY;
 };
 
 #endif // !SCENE_H
