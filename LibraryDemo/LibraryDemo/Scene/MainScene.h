@@ -9,7 +9,7 @@
 
 #include "Scene.h"
 
-class CharacterManager;
+class ObjectManager;
 class CameraController;
 class Light;
 
@@ -30,7 +30,7 @@ public:
 	virtual void Draw();
 
 private:
-	CharacterManager*	m_pCharacterManager;
+	ObjectManager*		m_pObjectManager;
 	CameraController*	m_pCameraController;
 	Light*				m_pLight;
 };

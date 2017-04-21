@@ -5,38 +5,38 @@
 */
 
 #include "MainScene.h"
-#include "../Character/CharacterManager.h"
 #include <Library\DebugSystem.h>
 #include <Library\Define.h>
+#include "../ObjectManager/ObjectManager.h"
 #include "../CameraController/CameraController.h"
 #include <Library\Light.h>
 
 MainScene::MainScene() : 
 Scene(Scene::ID::MAIN_SCENE),
-m_pCharacterManager(New CharacterManager),
+m_pObjectManager(New ObjectManager),
 m_pCameraController(&CameraController::Instace()),
-m_pLight(New Light)
+m_pLight(New Light({0.0f, 1.5f, 1.5f}))
 {
-	MyAssert(m_pCharacterManager, "NULLが入っています");
+	MyAssert(m_pObjectManager, "NULLが入っています");
 	MyAssert(m_pLight, "NULLが入っています");
-	m_pLight->Lighting();
+	m_pLight->Lighting(0x44444444);
 }
 
 MainScene::~MainScene()
 {
-	SafeDelete(m_pCharacterManager);
+	SafeDelete(m_pObjectManager);
 	SafeDelete(m_pLight);
 }
 
 Scene::ID MainScene::Control()
 {
 	m_pCameraController->Control();
-	m_pCharacterManager->Control();
+	m_pObjectManager->Control();
 
 	return Scene::ID::MAIN_SCENE;
 }
 
 void MainScene::Draw()
 {
-	m_pCharacterManager->Draw();
+	m_pObjectManager->Draw();
 }
