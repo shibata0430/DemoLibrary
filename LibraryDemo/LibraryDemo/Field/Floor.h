@@ -10,17 +10,18 @@
 #include "Field.h"
 #include <d3dx9.h>
 
-
 class Floor : public Field
 {
 public:
+	/**コンストラクタ*/
 	Floor();
+	/**デストラクタ*/
 	~Floor();
-
+	/**描画関数*/
 	virtual void Draw();
 
 private:
-	D3DXVECTOR3 m_floorPos;
+	D3DXVECTOR3 m_floorPos;	// 床のローカル座標
 };
 
 #endif // !FLOOR_H

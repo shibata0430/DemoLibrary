@@ -13,22 +13,22 @@ class FieldManager;
 class ObjectManager
 {
 public:
-	enum MeshKind
+	// 出てくるオブジェクト群
+	enum Kind
 	{
-		PLAYER,
-		CHIPS,
-		FLOOR,
+		PLAYER,		// 操作キャラ
+		CHIPS,		// チップス
+		FLOOR,		// 床
 	};
 
 public:
-
 	/**コンストラクタ*/
 	ObjectManager();
 	/**デストラクタ*/
 	~ObjectManager();
 	/**操作関数*/
 	void Control();
-
+	/**描画関数*/
 	void Draw();
 
 private:
