@@ -28,14 +28,17 @@
     <Filter Include="Main\Application\Scene\Button">
       <UniqueIdentifier>{dc07c6ac-85d7-468e-9665-f4c93e1fad25}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Application\Scene\MainScene\Character">
-      <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Main\Application\Scene\MainScene\CameraController">
       <UniqueIdentifier>{ee8e2305-8851-4ea8-92ce-11e620e4c7c1}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Main\Application\Scene\MainScene\Field">
+    <Filter Include="Main\Application\Scene\MainScene\ObjectManager">
+      <UniqueIdentifier>{da28dc0e-e58e-4b71-8c5d-3bf237fa7e15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Application\Scene\MainScene\ObjectManager\Field">
       <UniqueIdentifier>{03ffd707-a112-44b4-9eea-ff03cabdc461}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Main\Application\Scene\MainScene\ObjectManager\Character">
+      <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -70,31 +73,34 @@
       <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClCompile>
     <ClCompile Include="Character\CharacterManager.cpp">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClCompile>
     <ClCompile Include="Character\Character.cpp">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClCompile>
     <ClCompile Include="Character\Player.cpp">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClCompile>
     <ClCompile Include="CameraController\CameraController.cpp">
       <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
     </ClCompile>
     <ClCompile Include="Field\Field.cpp">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClCompile>
     <ClCompile Include="Field\FieldManager.cpp">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClCompile>
     <ClCompile Include="Field\Floor.cpp">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClCompile>
     <ClCompile Include="Field\Background.cpp">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClCompile>
     <ClCompile Include="Character\Chips.cpp">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectManager\ObjectManager.cpp">
+      <Filter>Main\Application\Scene\MainScene\ObjectManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -126,31 +132,34 @@
       <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClInclude>
     <ClInclude Include="Character\CharacterManager.h">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClInclude>
     <ClInclude Include="Character\Character.h">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClInclude>
     <ClInclude Include="Character\Player.h">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
     </ClInclude>
     <ClInclude Include="CameraController\CameraController.h">
       <Filter>Main\Application\Scene\MainScene\CameraController</Filter>
     </ClInclude>
     <ClInclude Include="Field\Field.h">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClInclude>
     <ClInclude Include="Field\FieldManager.h">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClInclude>
     <ClInclude Include="Field\Floor.h">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClInclude>
     <ClInclude Include="Field\Background.h">
-      <Filter>Main\Application\Scene\MainScene\Field</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Field</Filter>
     </ClInclude>
     <ClInclude Include="Character\Chips.h">
-      <Filter>Main\Application\Scene\MainScene\Character</Filter>
+      <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectManager\ObjectManager.h">
+      <Filter>Main\Application\Scene\MainScene\ObjectManager</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

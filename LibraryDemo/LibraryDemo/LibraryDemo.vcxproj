@@ -140,6 +140,7 @@
     <ClCompile Include="Field\FieldManager.cpp" />
     <ClCompile Include="Field\Floor.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="ObjectManager\ObjectManager.cpp" />
     <ClCompile Include="Scene\Logo.cpp" />
     <ClCompile Include="Scene\LogoScene.cpp" />
     <ClCompile Include="Scene\MainScene.cpp" />
@@ -160,6 +161,7 @@
     <ClInclude Include="Field\Field.h" />
     <ClInclude Include="Field\FieldManager.h" />
     <ClInclude Include="Field\Floor.h" />
+    <ClInclude Include="ObjectManager\ObjectManager.h" />
     <ClInclude Include="Scene\Logo.h" />
     <ClInclude Include="Scene\LogoScene.h" />
     <ClInclude Include="Scene\MainScene.h" />
