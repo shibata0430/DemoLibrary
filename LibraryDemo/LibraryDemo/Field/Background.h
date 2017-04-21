@@ -15,7 +15,6 @@ public:
 	Background();
 	~Background();
 
-	virtual void Control();
 	virtual void Draw();
 };
 

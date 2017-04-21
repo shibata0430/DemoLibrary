@@ -15,7 +15,3 @@ m_rLibrary(Library::Instace())
 Field::~Field()
 {
 }
-
-void Field::Control()
-{
-}

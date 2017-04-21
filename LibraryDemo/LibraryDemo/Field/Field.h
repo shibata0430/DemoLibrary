@@ -7,6 +7,8 @@
 #ifndef FIELD_H
 #define FIELD_H
 
+#include <d3dx9.h>
+
 class Library;
 
 class Field
@@ -15,7 +17,6 @@ public:
 	Field();
 	~Field();
 
-	virtual void Control();
 	virtual void Draw() = 0;
 
 protected:

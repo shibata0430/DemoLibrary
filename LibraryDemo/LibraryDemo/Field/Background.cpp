@@ -14,10 +14,6 @@ Background::~Background()
 {
 }
 
-void Background::Control()
-{
-}
-
 void Background::Draw()
 {
 }

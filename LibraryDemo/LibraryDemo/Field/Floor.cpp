@@ -5,19 +5,20 @@
 */
 
 #include "Floor.h"
+#include "../ObjectManager/ObjectManager.h"
+#include <Library.h>
 
-Floor::Floor()
+Floor::Floor() : 
+m_floorPos(2.0f, -5.0f, 0.0f)
 {
+	m_rLibrary.LoadXFile(ObjectManager::MeshKind::FLOOR, "Resource/Texture/Ground.x");
 }
 
 Floor::~Floor()
 {
 }
 
-void Floor::Control()
-{
-}
-
 void Floor::Draw()
 {
+	m_rLibrary.DrawXFile(ObjectManager::MeshKind::FLOOR);
 }

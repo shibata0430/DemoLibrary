@@ -7,14 +7,20 @@
 #ifndef FIELDMANAGER_H
 #define FIELDMANAGER_H
 
+#include <vector>
+
+class Field;
+
 class FieldManager
 {
 public:
 	FieldManager();
 	~FieldManager();
 
-	void Control();
 	void Drwa();
+
+private:
+	std::vector<Field*> m_pField;
 };
 
 #endif // !FIELDMANAGER_H

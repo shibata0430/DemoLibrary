@@ -8,6 +8,8 @@
 #define FLOOR_H
 
 #include "Field.h"
+#include <d3dx9.h>
+
 
 class Floor : public Field
 {
@@ -15,8 +17,10 @@ public:
 	Floor();
 	~Floor();
 
-	virtual void Control();
 	virtual void Draw();
+
+private:
+	D3DXVECTOR3 m_floorPos;
 };
 
 #endif // !FLOOR_H

@@ -5,19 +5,28 @@
 */
 
 #include "FieldManager.h"
+#include "Floor.h"
+#include <Library\DebugSystem.h>
+#include <Library\Define.h>
+
 
 FieldManager::FieldManager()
 {
+	m_pField.emplace_back(New Floor);
 }
 
 FieldManager::~FieldManager()
 {
-}
-
-void FieldManager::Control()
-{
+	for (unsigned int i = 0; i < m_pField.size(); i++)
+	{
+		SafeDelete(m_pField[i]);
+	}
 }
 
 void FieldManager::Drwa()
 {
+	for (unsigned int i = 0; i < m_pField.size(); i++)
+	{
+		m_pField[i]->Draw();
+	}
 }
