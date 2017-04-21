@@ -38,7 +38,7 @@ public:
 	 * @param [in] sceneID_	次のシーンＩＤ
 	 * @retrun				アップキャストしたインスタンス
 	 */
-	Scene* CreateScene(Scene::ID sceneID_);	
+	Scene* CreateScene(Scene::ID nextSceneID_);	
 };
 
 #endif // !SCENEFACTORY_H

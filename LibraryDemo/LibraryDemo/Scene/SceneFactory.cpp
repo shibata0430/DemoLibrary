@@ -12,7 +12,7 @@
 
 SceneFactory::SceneFactory()
 {
-	int a = 0;
+
 }
 
 SceneFactory::~SceneFactory()
@@ -20,11 +20,11 @@ SceneFactory::~SceneFactory()
 
 }
 
-Scene* SceneFactory::CreateScene(Scene::ID sceneID_)
+Scene* SceneFactory::CreateScene(Scene::ID nextSceneID_)
 {
 	Scene* pScene = NULL;
 
-	switch (sceneID_)
+	switch (nextSceneID_)
 	{
 	case Scene::ID::LOGO_SCENE:
 		pScene = New LogoScene;
