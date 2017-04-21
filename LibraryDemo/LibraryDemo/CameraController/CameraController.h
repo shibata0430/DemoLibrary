@@ -19,7 +19,7 @@ private:
 	friend Singleton<CameraController>;
 
 	CameraController();
-	~CameraController();
+	virtual ~CameraController();
 
 public:
 	/**カメラ制御関数*/
