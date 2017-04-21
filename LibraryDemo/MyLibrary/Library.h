@@ -11,6 +11,7 @@
 
 #include <dinput.h>
 #include <d3dx9.h>
+#include "Library\Singleton.h"
 
 /// 頂点フォーマット
 #define D3DFVF_CUSTOMVERTEX (D3DFVF_XYZRHW | D3DFVF_DIFFUSE | D3DFVF_TEX1)
@@ -45,25 +46,16 @@ enum KeyState
 	OFF
 };
 
-class Library
+class Library : public Singleton<Library>
 {
 private:
+	friend Singleton<Library>;
 	/**コンストラクタ*/
 	Library();
+	/**デストラクタ*/
+	virtual ~Library();
 
 public:		// Libraryクラスのパブリック関数
-	/**デストラクタ*/
-	~Library();
-
-	/**
-	 * ライブラリクラスのインスタンス取得関数
-	 * return &library	ライブラリクラスのインスタンス
-	 */
-	static Library& Instace()
-	{
-		static Library library;
-		return library;
-	}
 
 	/**
 	 * ライブラリを使用できるようにする関数

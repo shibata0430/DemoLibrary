@@ -10,27 +10,18 @@
 #define DIRECTINPUT_VERSION 0x0800
 
 #include <dinput.h>
+#include "Singleton.h"
 
-class InputDevice
+class InputDevice : public Singleton<InputDevice>
 {
 private:
+	friend Singleton<InputDevice>;
 	/**コンストラクタ*/
 	InputDevice();
+	/**デストラクタ*/
+	virtual ~InputDevice();
 
 public:
-	/**デストラクタ*/
-	~InputDevice();
-
-	/**
-	 * インプットデバイスのインスタンス取得関数
-	 * @return	inputDevice	インプットデバイスのインスタンス
-	 */
-	static InputDevice& Instance()
-	{
-		static InputDevice inputDevice;
-		return inputDevice;
-	}
-
 	/**
 	 * DirectInputの初期化関数
 	 * @retval true		初期化成功

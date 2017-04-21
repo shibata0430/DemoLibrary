@@ -8,27 +8,18 @@
 #define SOUNDINTERFACE_H
 
 #include <dsound.h>
+#include "Singleton.h"
 
-class SoundInterface
+class SoundInterface : public Singleton<SoundInterface>
 {
 private:
+	friend Singleton<SoundInterface>;
 	/**コンストラクタ*/
 	SoundInterface();
+	/**デストラクタ*/
+	virtual ~SoundInterface();
 
 public:
-	/**デストラクタ*/
-	~SoundInterface();
-
-	/**
-	 * サウンドインターフェイスのインスタンス取得関数
-	 * @return soundInterface サウンドインターフェイスのインスタンス
-	 */
-	static SoundInterface& Instance()
-	{
-		static SoundInterface soundInterface;
-		return soundInterface;
-	}
-
 	/**
 	 * サウンドの初期化関数
 	 * @param [in]	hWnd_	ウィンドウハンドル

@@ -13,7 +13,7 @@ template<class Type>
 class Singleton
 {
 public:
-	static Type& Instace()
+	static Type& Instance()
 	{
 		static Type m_instance;
 		return m_instance;
