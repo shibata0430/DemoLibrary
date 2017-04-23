@@ -39,7 +39,8 @@ public:
 private:
 	SceneFactory*	m_pSceneFactory;	// シーンの生成をするクラス
 	Scene*			m_pScene;			// シーンの抽象クラス
-	Scene::ID		m_nextSceneID;		// 次に繊維するシーンＩＤ
+	Scene::ID		m_nextSceneID;		// 次に繊維するシーンID
+	Scene::ID		m_currentSceneID;	// 現在のシーンID
 	State			m_state;			// 現在のシーンの状態
 	bool			m_isControlEnd;		// 操作が終了したかどうか
 };
