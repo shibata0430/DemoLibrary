@@ -14,9 +14,12 @@ class Field;
 class FieldManager
 {
 public:
+	/**コンストラクタ*/
 	FieldManager();
+	/**デストラクタ*/
 	~FieldManager();
 
+	/**描画関数*/
 	void Drwa();
 
 private:

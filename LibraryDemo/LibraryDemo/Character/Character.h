@@ -26,6 +26,11 @@ public:
 	virtual void Draw() = 0;
 
 protected:
+	/**
+	 * 座標変換関数
+	 * @param [in] localPos_	オブジェクトのローカル座標
+	 * @param [in] angle_		オブジェクトの回転角度
+	 */
 	void Transform3D(const D3DXVECTOR3& localPos_, float angle_);
 
 protected:

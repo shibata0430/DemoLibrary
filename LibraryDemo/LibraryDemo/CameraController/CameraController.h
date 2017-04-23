@@ -18,7 +18,15 @@ class CameraController : public Singleton<CameraController>
 private:
 	friend Singleton<CameraController>;
 
+	/**
+	 * コンストラクタ
+	 * @attention	Singletonパターンを使用しているためprivate
+	 */
 	CameraController();
+	/**
+	* デストラクタ
+	* @attention	Singletonパターンを使用しているためprivate
+	*/
 	virtual ~CameraController();
 
 public:
@@ -28,14 +36,12 @@ public:
 	/**ビュー変換関数*/
 	void TransformView();
 
-	void SetLookAtPos(const D3DXVECTOR3& rplayerPos_);
-
 private:
-	Camera*			m_pCamera;
-	D3DXVECTOR3		m_eyePos;
-	D3DXVECTOR3		m_lookAtPos;
-	Library&		m_rLibrary;
-	float			m_angle;
+	Camera*			m_pCamera;		// 自作のカメラクラス
+	D3DXVECTOR3		m_eyePos;		// カメラの位置座標
+	D3DXVECTOR3		m_lookAtPos;	// カメラの注視座標
+	Library&		m_rLibrary;		// 自作ライブラリクラス
+	float			m_angle;		// カメラの角度
 };
 
 #endif // !CAMERACONTROLLER_H

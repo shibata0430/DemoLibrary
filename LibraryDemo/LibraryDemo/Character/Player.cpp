@@ -11,8 +11,8 @@
 
 namespace
 {
-	const float moveSpeed = 0.5f;
-	const float rotateSpeed = 0.5f;
+	const float moveSpeed = 0.5f;		// 移動スピード
+	const float rotateSpeed = 0.5f;		// 回転スピード
 }
 
 Player::Player() : 

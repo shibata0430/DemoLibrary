@@ -13,15 +13,19 @@
 class Chips : public Character
 {
 public:
+	/**コンストラクタ*/
 	Chips();
+	/**デストラクタ*/
 	~Chips();
 
+	/**操作関数*/
 	virtual void Control();
+	/**描画関数*/
 	virtual void Draw();
 
 private:
-	D3DXVECTOR3 m_chipPos;
-	float		m_rotateAngle;
+	D3DXVECTOR3 m_chipPos;		// チップスのローカル座標
+	float		m_rotateAngle;	// 回転のアングル
 };
 
 

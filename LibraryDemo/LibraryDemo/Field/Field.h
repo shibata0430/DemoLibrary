@@ -14,9 +14,12 @@ class Library;
 class Field
 {
 public:
+	/**コンストラクタ*/
 	Field();
+	/**デストラクタ*/
 	~Field();
 
+	/**描画関数*/
 	virtual void Draw() = 0;
 
 protected:
