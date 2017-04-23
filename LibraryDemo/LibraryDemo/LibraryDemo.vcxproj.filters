@@ -40,6 +40,9 @@
     <Filter Include="Main\Application\Scene\MainScene\ObjectManager\Character">
       <UniqueIdentifier>{6498b4ca-f4a7-4f7b-80a2-e7a62124092a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Scene\Logo">
+      <UniqueIdentifier>{733f1275-dbe9-4dcf-bb47-a8446a83e505}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -68,9 +71,6 @@
     </ClCompile>
     <ClCompile Include="Button\Button.cpp">
       <Filter>Main\Application\Scene\Button</Filter>
-    </ClCompile>
-    <ClCompile Include="Scene\Logo.cpp">
-      <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClCompile>
     <ClCompile Include="Character\CharacterManager.cpp">
       <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
@@ -102,6 +102,12 @@
     <ClCompile Include="ObjectManager\ObjectManager.cpp">
       <Filter>Main\Application\Scene\MainScene\ObjectManager</Filter>
     </ClCompile>
+    <ClCompile Include="Logo\Logo.cpp">
+      <Filter>Main\Application\Scene\Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\TitleBackground.cpp">
+      <Filter>Main\Application\Scene\TitleScene</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -127,9 +133,6 @@
     </ClInclude>
     <ClInclude Include="Button\Button.h">
       <Filter>Main\Application\Scene\Button</Filter>
-    </ClInclude>
-    <ClInclude Include="Scene\Logo.h">
-      <Filter>Main\Application\Scene\LogoScene</Filter>
     </ClInclude>
     <ClInclude Include="Character\CharacterManager.h">
       <Filter>Main\Application\Scene\MainScene\ObjectManager\Character</Filter>
@@ -160,6 +163,12 @@
     </ClInclude>
     <ClInclude Include="ObjectManager\ObjectManager.h">
       <Filter>Main\Application\Scene\MainScene\ObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\TitleBackground.h">
+      <Filter>Main\Application\Scene\TitleScene</Filter>
+    </ClInclude>
+    <ClInclude Include="Logo\Logo.h">
+      <Filter>Main\Application\Scene\Logo</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

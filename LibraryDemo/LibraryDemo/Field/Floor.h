@@ -16,7 +16,7 @@ public:
 	/**コンストラクタ*/
 	Floor();
 	/**デストラクタ*/
-	~Floor();
+	virtual ~Floor();
 	/**描画関数*/
 	virtual void Draw();
 
