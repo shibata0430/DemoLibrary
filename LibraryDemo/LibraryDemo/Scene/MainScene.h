@@ -32,7 +32,7 @@ public:
 private:
 	ObjectManager*		m_pObjectManager;
 	CameraController*	m_pCameraController;
-	Light*				m_pLight;
+	Light*				m_pLight;				// 自作ライトクラス
 };
 
 #endif // !MAINSCENE_H
