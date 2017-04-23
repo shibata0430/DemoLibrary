@@ -9,6 +9,8 @@
 
 #include "Scene.h"
 
+class Logo;
+
 class LogoScene : public Scene
 {
 public:
@@ -31,7 +33,8 @@ public:
 	/**描画関数*/
 	virtual void Draw();
 private:
-
+	Logo*	m_pLogo;
+	int		m_chageCount;
 };
 
 #endif // !LOGOSCENE_H
