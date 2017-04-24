@@ -135,6 +135,7 @@
     <ClCompile Include="Character\CharacterManager.cpp" />
     <ClCompile Include="Character\Chips.cpp" />
     <ClCompile Include="Character\Player.cpp" />
+    <ClCompile Include="Fade\Fade.cpp" />
     <ClCompile Include="Field\Background.cpp" />
     <ClCompile Include="Field\Field.cpp" />
     <ClCompile Include="Field\FieldManager.cpp" />
@@ -158,6 +159,7 @@
     <ClInclude Include="Character\CharacterManager.h" />
     <ClInclude Include="Character\Chips.h" />
     <ClInclude Include="Character\Player.h" />
+    <ClInclude Include="Fade\Fade.h" />
     <ClInclude Include="Field\Background.h" />
     <ClInclude Include="Field\Field.h" />
     <ClInclude Include="Field\FieldManager.h" />

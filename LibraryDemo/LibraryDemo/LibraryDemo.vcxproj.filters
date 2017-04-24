@@ -43,6 +43,9 @@
     <Filter Include="Main\Application\Scene\Logo">
       <UniqueIdentifier>{733f1275-dbe9-4dcf-bb47-a8446a83e505}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Main\Application\Scene\Fade">
+      <UniqueIdentifier>{2ed13f60-e580-4f5d-b3a0-b0ed1f1cd11d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -108,6 +111,9 @@
     <ClCompile Include="Scene\TitleBackground.cpp">
       <Filter>Main\Application\Scene\TitleScene</Filter>
     </ClCompile>
+    <ClCompile Include="Fade\Fade.cpp">
+      <Filter>Main\Application\Scene\Fade</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Scene\SceneTransition.h">
@@ -169,6 +175,9 @@
     </ClInclude>
     <ClInclude Include="Logo\Logo.h">
       <Filter>Main\Application\Scene\Logo</Filter>
+    </ClInclude>
+    <ClInclude Include="Fade\Fade.h">
+      <Filter>Main\Application\Scene\Fade</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
