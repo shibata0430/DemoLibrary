@@ -1,6 +1,6 @@
 ﻿/**
  * @file	Logo.h
- * @breif	フリー素材のロゴを表示するクラスヘッダ
+ * @breif	色んなロゴの表示をするクラスヘッダ
  * @author	shibata
  */
 

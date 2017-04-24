@@ -1,4 +1,10 @@
-﻿#include "Button.h"
+﻿/**
+* @file		Button.cpp
+* @breif	作品で出てくるボタン関係のクラス実装
+* @author	shibata
+*/
+
+#include "Button.h"
 #include <Library.h>
 
 Button::Button(float posX_, float posY_, int texindex_) : 

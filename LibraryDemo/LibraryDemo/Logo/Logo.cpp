@@ -1,4 +1,10 @@
-﻿#include "Logo.h"
+﻿/**
+* @file		Logo.cpp
+* @breif	色んなロゴの表示をするクラス実装
+* @author	shibata
+*/
+
+#include "Logo.h"
 #include <Library.h>
 
 Logo::Logo(float width_, float height_, float posX_, float posY_, int texindex_, const char* pFilePath_) :
